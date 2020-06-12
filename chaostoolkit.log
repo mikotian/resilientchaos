@@ -1,0 +1,1150 @@
+[36m[2020-05-11 01:02:21 DEBUG] [cli:71][39m ###############################################################################
+[36m[2020-05-11 01:02:21 DEBUG] [cli:72][39m Running command 'discover'
+[36m[2020-05-11 01:02:21 DEBUG] [cli:76][39m Using settings file '/home/mithun/.chaostoolkit/settings.yaml'
+[36m[2020-05-11 01:02:35 DEBUG] [cli:71][39m ###############################################################################
+[36m[2020-05-11 01:02:35 DEBUG] [cli:72][39m Running command 'discover'
+[36m[2020-05-11 01:02:35 DEBUG] [cli:76][39m Using settings file '/home/mithun/.chaostoolkit/settings.yaml'
+[36m[2020-05-11 01:03:22 DEBUG] [cli:71][39m ###############################################################################
+[36m[2020-05-11 01:03:22 DEBUG] [cli:72][39m Running command 'discover'
+[36m[2020-05-11 01:03:22 DEBUG] [cli:76][39m Using settings file '/home/mithun/.chaostoolkit/settings.yaml'
+[36m[2020-05-11 01:03:23 DEBUG] [settings:24][39m The Chaos Toolkit settings file could not be found at '/home/mithun/.chaostoolkit/settings.yaml'.
+[32m[2020-05-11 01:03:23 INFO] [package:23][39m Attempting to download and install package 'chaostoolkit-aws'
+[36m[2020-05-11 01:03:24 DEBUG] [package:31][39m Requirement already up-to-date: chaostoolkit-aws in ./.venvs/chaostk/lib/python3.7/site-packages (0.13.0)
+    Requirement already satisfied, skipping upgrade: chaostoolkit-lib>=0.13.0 in ./.venvs/chaostk/lib/python3.7/site-packages (from chaostoolkit-aws) (1.9.0)
+    Requirement already satisfied, skipping upgrade: boto3 in ./.venvs/chaostk/lib/python3.7/site-packages (from chaostoolkit-aws) (1.13.6)
+    Requirement already satisfied, skipping upgrade: requests in ./.venvs/chaostk/lib/python3.7/site-packages (from chaostoolkit-aws) (2.23.0)
+    Requirement already satisfied, skipping upgrade: aws-requests-auth in ./.venvs/chaostk/lib/python3.7/site-packages (from chaostoolkit-aws) (0.4.2)
+    Requirement already satisfied, skipping upgrade: logzero>=1.5.0 in ./.venvs/chaostk/lib/python3.7/site-packages (from chaostoolkit-lib>=0.13.0->chaostoolkit-aws) (1.5.0)
+    Requirement already satisfied, skipping upgrade: pyyaml>=5.3.1 in ./.venvs/chaostk/lib/python3.7/site-packages (from chaostoolkit-lib>=0.13.0->chaostoolkit-aws) (5.3.1)
+    Requirement already satisfied, skipping upgrade: importlib-metadata>=1.2.0; python_version < "3.8" in ./.venvs/chaostk/lib/python3.7/site-packages (from chaostoolkit-lib>=0.13.0->chaostoolkit-aws) (1.6.0)
+    Requirement already satisfied, skipping upgrade: botocore<1.17.0,>=1.16.6 in ./.venvs/chaostk/lib/python3.7/site-packages (from boto3->chaostoolkit-aws) (1.16.6)
+    Requirement already satisfied, skipping upgrade: s3transfer<0.4.0,>=0.3.0 in ./.venvs/chaostk/lib/python3.7/site-packages (from boto3->chaostoolkit-aws) (0.3.3)
+    Requirement already satisfied, skipping upgrade: jmespath<1.0.0,>=0.7.1 in ./.venvs/chaostk/lib/python3.7/site-packages (from boto3->chaostoolkit-aws) (0.9.5)
+    Requirement already satisfied, skipping upgrade: idna<3,>=2.5 in ./.venvs/chaostk/lib/python3.7/site-packages (from requests->chaostoolkit-aws) (2.9)
+    Requirement already satisfied, skipping upgrade: chardet<4,>=3.0.2 in ./.venvs/chaostk/lib/python3.7/site-packages (from requests->chaostoolkit-aws) (3.0.4)
+    Requirement already satisfied, skipping upgrade: certifi>=2017.4.17 in ./.venvs/chaostk/lib/python3.7/site-packages (from requests->chaostoolkit-aws) (2020.4.5.1)
+    Requirement already satisfied, skipping upgrade: urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 in ./.venvs/chaostk/lib/python3.7/site-packages (from requests->chaostoolkit-aws) (1.25.9)
+    Requirement already satisfied, skipping upgrade: zipp>=0.5 in ./.venvs/chaostk/lib/python3.7/site-packages (from importlib-metadata>=1.2.0; python_version < "3.8"->chaostoolkit-lib>=0.13.0->chaostoolkit-aws) (3.1.0)
+    Requirement already satisfied, skipping upgrade: python-dateutil<3.0.0,>=2.1 in ./.venvs/chaostk/lib/python3.7/site-packages (from botocore<1.17.0,>=1.16.6->boto3->chaostoolkit-aws) (2.8.1)
+    Requirement already satisfied, skipping upgrade: docutils<0.16,>=0.10 in ./.venvs/chaostk/lib/python3.7/site-packages (from botocore<1.17.0,>=1.16.6->boto3->chaostoolkit-aws) (0.15.2)
+    Requirement already satisfied, skipping upgrade: six>=1.5 in ./.venvs/chaostk/lib/python3.7/site-packages (from python-dateutil<3.0.0,>=2.1->botocore<1.17.0,>=1.16.6->boto3->chaostoolkit-aws) (1.14.0)
+    
+[32m[2020-05-11 01:03:24 INFO] [package:40][39m Package downloaded and installed in current environment
+[32m[2020-05-11 01:03:24 INFO] [__init__:206][39m Discovering capabilities from chaostoolkit-aws
+[32m[2020-05-11 01:03:24 INFO] [discover:73][39m Searching for actions in chaosaws.ec2.actions
+[32m[2020-05-11 01:03:24 INFO] [discover:81][39m Searching for probes in chaosaws.ec2.probes
+[32m[2020-05-11 01:03:24 INFO] [discover:73][39m Searching for actions in chaosaws.ecs.actions
+[32m[2020-05-11 01:03:24 INFO] [discover:81][39m Searching for probes in chaosaws.ecs.probes
+[32m[2020-05-11 01:03:24 INFO] [discover:73][39m Searching for actions in chaosaws.iam.actions
+[32m[2020-05-11 01:03:24 INFO] [discover:81][39m Searching for probes in chaosaws.iam.probes
+[32m[2020-05-11 01:03:24 INFO] [discover:73][39m Searching for actions in chaosaws.eks.actions
+[32m[2020-05-11 01:03:24 INFO] [discover:81][39m Searching for probes in chaosaws.eks.probes
+[32m[2020-05-11 01:03:24 INFO] [discover:73][39m Searching for actions in chaosaws.elbv2.actions
+[32m[2020-05-11 01:03:24 INFO] [discover:81][39m Searching for probes in chaosaws.elbv2.probes
+[32m[2020-05-11 01:03:24 INFO] [discover:73][39m Searching for actions in chaosaws.asg.actions
+[32m[2020-05-11 01:03:24 INFO] [discover:81][39m Searching for probes in chaosaws.asg.probes
+[36m[2020-05-11 01:03:24 DEBUG] [discover:183][39m 'typing.Union[int, float]' could not be ported to something meaningful
+[36m[2020-05-11 01:03:24 DEBUG] [discover:183][39m 'typing.Union[int, float]' could not be ported to something meaningful
+[36m[2020-05-11 01:03:24 DEBUG] [discover:183][39m 'typing.Union[int, float]' could not be ported to something meaningful
+[32m[2020-05-11 01:03:24 INFO] [discover:73][39m Searching for actions in chaosaws.awslambda.actions
+[32m[2020-05-11 01:03:24 INFO] [discover:81][39m Searching for probes in chaosaws.awslambda.probes
+[32m[2020-05-11 01:03:24 INFO] [discover:73][39m Searching for actions in chaosaws.cloudwatch.actions
+[32m[2020-05-11 01:03:24 INFO] [discover:81][39m Searching for probes in chaosaws.cloudwatch.probes
+[32m[2020-05-11 01:03:24 INFO] [discover:73][39m Searching for actions in chaosaws.rds.actions
+[32m[2020-05-11 01:03:24 INFO] [discover:81][39m Searching for probes in chaosaws.rds.probes
+[33m[2020-05-11 01:03:24 WARNING] [discover:104][39m 'chaosaws.rds.probes' does not expose the __all__ attribute. It is required to determine what functions are actually exported as activities.
+[32m[2020-05-11 01:03:24 INFO] [discover:73][39m Searching for actions in chaosaws.elasticache.actions
+[32m[2020-05-11 01:03:24 INFO] [cli:261][39m Discovery outcome saved in ./discovery.json
+[36m[2020-05-11 01:16:10 DEBUG] [cli:71][39m ###############################################################################
+[36m[2020-05-11 01:16:10 DEBUG] [cli:72][39m Running command 'run'
+[36m[2020-05-11 01:16:10 DEBUG] [cli:76][39m Using settings file '/home/mithun/.chaostoolkit/settings.yaml'
+[36m[2020-05-11 01:16:11 DEBUG] [settings:24][39m The Chaos Toolkit settings file could not be found at '/home/mithun/.chaostoolkit/settings.yaml'.
+[36m[2020-05-11 01:16:11 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-05-11 01:16:11 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-05-11 01:16:11 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-05-11 01:16:11 DEBUG] [caching:35][39m Cached 2 activities
+[32m[2020-05-11 01:16:11 INFO] [experiment:54][39m Validating the experiment's syntax
+[36m[2020-05-11 01:16:11 DEBUG] [configuration:47][39m Loading configuration...
+[36m[2020-05-11 01:16:11 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-05-11 01:16:11 DEBUG] [secret:89][39m Secrets loaded
+[36m[2020-05-11 01:16:11 DEBUG] [caching:42][39m Clearing activities cache
+[31m[2020-05-11 01:16:11 ERROR] [cli:122][39m hypothesis probe must have a tolerance entry
+[36m[2020-05-11 01:16:11 DEBUG] [cli:123][39m hypothesis probe must have a tolerance entry
+[36m[2020-05-11 01:18:10 DEBUG] [cli:71][39m ###############################################################################
+[36m[2020-05-11 01:18:10 DEBUG] [cli:72][39m Running command 'run'
+[36m[2020-05-11 01:18:10 DEBUG] [cli:76][39m Using settings file '/home/mithun/.chaostoolkit/settings.yaml'
+[36m[2020-05-11 01:18:11 DEBUG] [settings:24][39m The Chaos Toolkit settings file could not be found at '/home/mithun/.chaostoolkit/settings.yaml'.
+[36m[2020-05-11 01:18:11 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-05-11 01:18:11 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-05-11 01:18:11 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-05-11 01:18:11 DEBUG] [caching:35][39m Cached 2 activities
+[32m[2020-05-11 01:18:11 INFO] [experiment:54][39m Validating the experiment's syntax
+[36m[2020-05-11 01:18:11 DEBUG] [configuration:47][39m Loading configuration...
+[36m[2020-05-11 01:18:11 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-05-11 01:18:11 DEBUG] [secret:89][39m Secrets loaded
+[32m[2020-05-11 01:18:11 INFO] [experiment:103][39m Experiment looks valid
+[36m[2020-05-11 01:18:11 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2020-05-11 01:18:11 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-05-11 01:18:11 DEBUG] [caching:35][39m Cached 2 activities
+[36m[2020-05-11 01:18:11 DEBUG] [configuration:47][39m Loading configuration...
+[36m[2020-05-11 01:18:11 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-05-11 01:18:11 DEBUG] [secret:89][39m Secrets loaded
+[36m[2020-05-11 01:18:11 DEBUG] [__init__:39][39m Initializing controls
+[32m[2020-05-11 01:18:11 INFO] [experiment:195][39m Running experiment: Stop an instance
+[36m[2020-05-11 01:18:11 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[32m[2020-05-11 01:18:11 INFO] [hypothesis:184][39m Steady state hypothesis: Application responds
+[36m[2020-05-11 01:18:11 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2020-05-11 01:18:11 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-05-11 01:18:11 INFO] [activity:161][39m Probe: count-instances
+[36m[2020-05-11 01:18:11 DEBUG] [python:36][39m Activity 'count-instances' loaded from '/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/chaosaws/ec2/probes.py'
+[36m[2020-05-11 01:18:11 DEBUG] [__init__:67][39m The configuration key `aws_region` is not set, looking in the environment instead for `AWS_REGION` or `AWS_DEFAULT_REGION`
+[36m[2020-05-11 01:18:11 DEBUG] [activity:233][39m Activity failed
+    Traceback (most recent call last):
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/chaoslib/provider/python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/chaosaws/ec2/probes.py", line 37, in count_instances
+        client = aws_client('ec2', configuration, secrets)
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/chaosaws/__init__.py", line 71, in aws_client
+        raise InterruptExecution("AWS requires a region to be set!")
+    chaoslib.exceptions.InterruptExecution: AWS requires a region to be set!
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/chaoslib/activity.py", line 226, in run_activity
+        result = run_python_activity(activity, configuration, secrets)
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/chaoslib/provider/python.py", line 60, in run_python_activity
+        sys.exc_info()[2])
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/chaoslib/provider/python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/chaosaws/ec2/probes.py", line 37, in count_instances
+        client = aws_client('ec2', configuration, secrets)
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/chaosaws/__init__.py", line 71, in aws_client
+        raise InterruptExecution("AWS requires a region to be set!")
+    chaoslib.exceptions.ActivityFailed: chaoslib.exceptions.InterruptExecution: AWS requires a region to be set!
+[31m[2020-05-11 01:18:11 ERROR] [activity:187][39m   => failed: chaoslib.exceptions.InterruptExecution: AWS requires a region to be set!
+[36m[2020-05-11 01:18:11 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[33m[2020-05-11 01:18:11 WARNING] [hypothesis:201][39m Probe terminated unexpectedly, so its tolerance could not be validated
+[36m[2020-05-11 01:18:11 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[31m[2020-05-11 01:18:11 CRITICAL] [experiment:247][39m Steady state probe 'count-instances' is not in the given tolerance so failing this experiment
+[32m[2020-05-11 01:18:11 INFO] [experiment:276][39m Experiment ended with status: failed
+[36m[2020-05-11 01:18:11 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2020-05-11 01:18:11 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2020-05-11 01:18:11 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2020-05-11 01:20:28 DEBUG] [cli:71][39m ###############################################################################
+[36m[2020-05-11 01:20:28 DEBUG] [cli:72][39m Running command 'run'
+[36m[2020-05-11 01:20:28 DEBUG] [cli:76][39m Using settings file '/home/mithun/.chaostoolkit/settings.yaml'
+[36m[2020-05-11 01:20:29 DEBUG] [settings:24][39m The Chaos Toolkit settings file could not be found at '/home/mithun/.chaostoolkit/settings.yaml'.
+[36m[2020-05-11 01:20:29 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-05-11 01:20:29 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-05-11 01:20:29 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-05-11 01:20:29 DEBUG] [caching:35][39m Cached 2 activities
+[32m[2020-05-11 01:20:29 INFO] [experiment:54][39m Validating the experiment's syntax
+[36m[2020-05-11 01:20:29 DEBUG] [configuration:47][39m Loading configuration...
+[36m[2020-05-11 01:20:29 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-05-11 01:20:29 DEBUG] [secret:89][39m Secrets loaded
+[32m[2020-05-11 01:20:29 INFO] [experiment:103][39m Experiment looks valid
+[36m[2020-05-11 01:20:29 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2020-05-11 01:20:29 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-05-11 01:20:29 DEBUG] [caching:35][39m Cached 2 activities
+[36m[2020-05-11 01:20:29 DEBUG] [configuration:47][39m Loading configuration...
+[36m[2020-05-11 01:20:29 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-05-11 01:20:29 DEBUG] [secret:89][39m Secrets loaded
+[36m[2020-05-11 01:20:29 DEBUG] [__init__:39][39m Initializing controls
+[32m[2020-05-11 01:20:29 INFO] [experiment:195][39m Running experiment: Stop an instance
+[36m[2020-05-11 01:20:29 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[32m[2020-05-11 01:20:29 INFO] [hypothesis:184][39m Steady state hypothesis: Application responds
+[36m[2020-05-11 01:20:29 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2020-05-11 01:20:29 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-05-11 01:20:29 INFO] [activity:161][39m Probe: count-instances
+[36m[2020-05-11 01:20:29 DEBUG] [python:36][39m Activity 'count-instances' loaded from '/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/chaosaws/ec2/probes.py'
+[36m[2020-05-11 01:20:29 DEBUG] [__init__:67][39m The configuration key `aws_region` is not set, looking in the environment instead for `AWS_REGION` or `AWS_DEFAULT_REGION`
+[36m[2020-05-11 01:20:29 DEBUG] [__init__:74][39m Using AWS region 'ap-south-1a'
+[36m[2020-05-11 01:20:29 DEBUG] [__init__:85][39m Client will be using profile 'default' from boto3 session
+[36m[2020-05-11 01:20:33 DEBUG] [activity:233][39m Activity failed
+    Traceback (most recent call last):
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/urllib3/connection.py", line 160, in _new_conn
+        (self._dns_host, self.port), self.timeout, **extra_kw
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/urllib3/util/connection.py", line 61, in create_connection
+        for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+      File "/usr/lib/python3.7/socket.py", line 748, in getaddrinfo
+        for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+    socket.gaierror: [Errno -2] Name or service not known
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/botocore/httpsession.py", line 263, in send
+        chunked=self._chunked(request.headers),
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/urllib3/connectionpool.py", line 725, in urlopen
+        method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/urllib3/util/retry.py", line 379, in increment
+        raise six.reraise(type(error), error, _stacktrace)
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/urllib3/packages/six.py", line 735, in reraise
+        raise value
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+        chunked=chunked,
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/urllib3/connectionpool.py", line 381, in _make_request
+        self._validate_conn(conn)
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/urllib3/connectionpool.py", line 976, in _validate_conn
+        conn.connect()
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/urllib3/connection.py", line 308, in connect
+        conn = self._new_conn()
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/urllib3/connection.py", line 172, in _new_conn
+        self, "Failed to establish a new connection: %s" % e
+    urllib3.exceptions.NewConnectionError: <botocore.awsrequest.AWSHTTPSConnection object at 0x7f95ad40af10>: Failed to establish a new connection: [Errno -2] Name or service not known
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/chaoslib/provider/python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/chaosaws/ec2/probes.py", line 38, in count_instances
+        result = client.describe_instances(Filters=filters)
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/botocore/client.py", line 316, in _api_call
+        return self._make_api_call(operation_name, kwargs)
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/botocore/client.py", line 613, in _make_api_call
+        operation_model, request_dict, request_context)
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/botocore/client.py", line 632, in _make_request
+        return self._endpoint.make_request(operation_model, request_dict)
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/botocore/endpoint.py", line 102, in make_request
+        return self._send_request(request_dict, operation_model)
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/botocore/endpoint.py", line 137, in _send_request
+        success_response, exception):
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/botocore/endpoint.py", line 256, in _needs_retry
+        caught_exception=caught_exception, request_dict=request_dict)
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/botocore/hooks.py", line 356, in emit
+        return self._emitter.emit(aliased_event_name, **kwargs)
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/botocore/hooks.py", line 228, in emit
+        return self._emit(event_name, kwargs)
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/botocore/hooks.py", line 211, in _emit
+        response = handler(**kwargs)
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/botocore/retryhandler.py", line 183, in __call__
+        if self._checker(attempts, response, caught_exception):
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/botocore/retryhandler.py", line 251, in __call__
+        caught_exception)
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/botocore/retryhandler.py", line 277, in _should_retry
+        return self._checker(attempt_number, response, caught_exception)
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/botocore/retryhandler.py", line 317, in __call__
+        caught_exception)
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/botocore/retryhandler.py", line 223, in __call__
+        attempt_number, caught_exception)
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/botocore/retryhandler.py", line 359, in _check_caught_exception
+        raise caught_exception
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/botocore/endpoint.py", line 200, in _do_get_response
+        http_response = self._send(request)
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/botocore/endpoint.py", line 269, in _send
+        return self.http_session.send(request)
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/botocore/httpsession.py", line 283, in send
+        raise EndpointConnectionError(endpoint_url=request.url, error=e)
+    botocore.exceptions.EndpointConnectionError: Could not connect to the endpoint URL: "https://ec2.ap-south-1a.amazonaws.com/"
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/chaoslib/activity.py", line 226, in run_activity
+        result = run_python_activity(activity, configuration, secrets)
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/chaoslib/provider/python.py", line 60, in run_python_activity
+        sys.exc_info()[2])
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/chaoslib/provider/python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/chaosaws/ec2/probes.py", line 38, in count_instances
+        result = client.describe_instances(Filters=filters)
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/botocore/client.py", line 316, in _api_call
+        return self._make_api_call(operation_name, kwargs)
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/botocore/client.py", line 613, in _make_api_call
+        operation_model, request_dict, request_context)
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/botocore/client.py", line 632, in _make_request
+        return self._endpoint.make_request(operation_model, request_dict)
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/botocore/endpoint.py", line 102, in make_request
+        return self._send_request(request_dict, operation_model)
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/botocore/endpoint.py", line 137, in _send_request
+        success_response, exception):
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/botocore/endpoint.py", line 256, in _needs_retry
+        caught_exception=caught_exception, request_dict=request_dict)
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/botocore/hooks.py", line 356, in emit
+        return self._emitter.emit(aliased_event_name, **kwargs)
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/botocore/hooks.py", line 228, in emit
+        return self._emit(event_name, kwargs)
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/botocore/hooks.py", line 211, in _emit
+        response = handler(**kwargs)
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/botocore/retryhandler.py", line 183, in __call__
+        if self._checker(attempts, response, caught_exception):
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/botocore/retryhandler.py", line 251, in __call__
+        caught_exception)
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/botocore/retryhandler.py", line 277, in _should_retry
+        return self._checker(attempt_number, response, caught_exception)
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/botocore/retryhandler.py", line 317, in __call__
+        caught_exception)
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/botocore/retryhandler.py", line 223, in __call__
+        attempt_number, caught_exception)
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/botocore/retryhandler.py", line 359, in _check_caught_exception
+        raise caught_exception
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/botocore/endpoint.py", line 200, in _do_get_response
+        http_response = self._send(request)
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/botocore/endpoint.py", line 269, in _send
+        return self.http_session.send(request)
+      File "/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/botocore/httpsession.py", line 283, in send
+        raise EndpointConnectionError(endpoint_url=request.url, error=e)
+    chaoslib.exceptions.ActivityFailed: botocore.exceptions.EndpointConnectionError: Could not connect to the endpoint URL: "https://ec2.ap-south-1a.amazonaws.com/"
+[31m[2020-05-11 01:20:33 ERROR] [activity:187][39m   => failed: botocore.exceptions.EndpointConnectionError: Could not connect to the endpoint URL: "https://ec2.ap-south-1a.amazonaws.com/"
+[36m[2020-05-11 01:20:33 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[33m[2020-05-11 01:20:33 WARNING] [hypothesis:201][39m Probe terminated unexpectedly, so its tolerance could not be validated
+[36m[2020-05-11 01:20:33 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[31m[2020-05-11 01:20:33 CRITICAL] [experiment:247][39m Steady state probe 'count-instances' is not in the given tolerance so failing this experiment
+[32m[2020-05-11 01:20:33 INFO] [experiment:276][39m Experiment ended with status: failed
+[36m[2020-05-11 01:20:33 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2020-05-11 01:20:33 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2020-05-11 01:20:33 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2020-05-11 01:20:55 DEBUG] [cli:71][39m ###############################################################################
+[36m[2020-05-11 01:20:55 DEBUG] [cli:72][39m Running command 'run'
+[36m[2020-05-11 01:20:55 DEBUG] [cli:76][39m Using settings file '/home/mithun/.chaostoolkit/settings.yaml'
+[36m[2020-05-11 01:20:56 DEBUG] [settings:24][39m The Chaos Toolkit settings file could not be found at '/home/mithun/.chaostoolkit/settings.yaml'.
+[36m[2020-05-11 01:20:56 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-05-11 01:20:56 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-05-11 01:20:56 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-05-11 01:20:56 DEBUG] [caching:35][39m Cached 2 activities
+[32m[2020-05-11 01:20:56 INFO] [experiment:54][39m Validating the experiment's syntax
+[36m[2020-05-11 01:20:56 DEBUG] [configuration:47][39m Loading configuration...
+[36m[2020-05-11 01:20:56 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-05-11 01:20:56 DEBUG] [secret:89][39m Secrets loaded
+[32m[2020-05-11 01:20:56 INFO] [experiment:103][39m Experiment looks valid
+[36m[2020-05-11 01:20:56 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2020-05-11 01:20:56 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-05-11 01:20:56 DEBUG] [caching:35][39m Cached 2 activities
+[36m[2020-05-11 01:20:56 DEBUG] [configuration:47][39m Loading configuration...
+[36m[2020-05-11 01:20:56 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-05-11 01:20:56 DEBUG] [secret:89][39m Secrets loaded
+[36m[2020-05-11 01:20:56 DEBUG] [__init__:39][39m Initializing controls
+[32m[2020-05-11 01:20:56 INFO] [experiment:195][39m Running experiment: Stop an instance
+[36m[2020-05-11 01:20:56 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[32m[2020-05-11 01:20:56 INFO] [hypothesis:184][39m Steady state hypothesis: Application responds
+[36m[2020-05-11 01:20:56 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2020-05-11 01:20:56 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-05-11 01:20:56 INFO] [activity:161][39m Probe: count-instances
+[36m[2020-05-11 01:20:56 DEBUG] [python:36][39m Activity 'count-instances' loaded from '/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/chaosaws/ec2/probes.py'
+[36m[2020-05-11 01:20:56 DEBUG] [__init__:67][39m The configuration key `aws_region` is not set, looking in the environment instead for `AWS_REGION` or `AWS_DEFAULT_REGION`
+[36m[2020-05-11 01:20:56 DEBUG] [__init__:74][39m Using AWS region 'ap-south-1'
+[36m[2020-05-11 01:20:56 DEBUG] [__init__:85][39m Client will be using profile 'default' from boto3 session
+[36m[2020-05-11 01:20:56 DEBUG] [activity:179][39m   => succeeded with '1'
+[36m[2020-05-11 01:20:56 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-05-11 01:20:56 DEBUG] [hypothesis:212][39m allowed tolerance is 1
+[32m[2020-05-11 01:20:56 INFO] [hypothesis:222][39m Steady state hypothesis is met!
+[36m[2020-05-11 01:20:56 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2020-05-11 01:20:56 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2020-05-11 01:20:56 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-05-11 01:20:56 INFO] [activity:161][39m Action: stop-an-ec2-instance
+[36m[2020-05-11 01:20:56 DEBUG] [python:36][39m Activity 'stop-an-ec2-instance' loaded from '/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/chaosaws/ec2/actions.py'
+[36m[2020-05-11 01:20:56 DEBUG] [__init__:67][39m The configuration key `aws_region` is not set, looking in the environment instead for `AWS_REGION` or `AWS_DEFAULT_REGION`
+[36m[2020-05-11 01:20:56 DEBUG] [__init__:74][39m Using AWS region 'ap-south-1'
+[36m[2020-05-11 01:20:56 DEBUG] [__init__:85][39m Client will be using profile 'default' from boto3 session
+[36m[2020-05-11 01:20:56 DEBUG] [actions:59][39m Picked EC2 instance 'defaultdict(typing.List, {'normal': ['i-0e1f0c1d97589b5e9']})' from AZ 'None' to be stopped
+[36m[2020-05-11 01:20:56 DEBUG] [actions:527][39m Stopping instances: ['i-0e1f0c1d97589b5e9']
+[36m[2020-05-11 01:20:56 DEBUG] [activity:179][39m   => succeeded with '[{'StoppingInstances': [{'CurrentState': {'Code': 64, 'Name': 'stopping'}, 'InstanceId': 'i-0e1f0c1d97589b5e9', 'PreviousState': {'Code': 16, 'Name': 'running'}}], 'ResponseMetadata': {'RequestId': '599286a9-df46-4ad2-94ce-0578d4029c47', 'HTTPStatusCode': 200, 'HTTPHeaders': {'x-amzn-requestid': '599286a9-df46-4ad2-94ce-0578d4029c47', 'content-type': 'text/xml;charset=UTF-8', 'content-length': '579', 'date': 'Sun, 10 May 2020 19:50:56 GMT', 'server': 'AmazonEC2'}, 'RetryAttempts': 0}}]'
+[36m[2020-05-11 01:20:56 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-05-11 01:20:56 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-05-11 01:20:56 INFO] [activity:161][39m Probe: count-instances
+[36m[2020-05-11 01:20:56 DEBUG] [python:36][39m Activity 'count-instances' loaded from '/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/chaosaws/ec2/probes.py'
+[36m[2020-05-11 01:20:56 DEBUG] [__init__:67][39m The configuration key `aws_region` is not set, looking in the environment instead for `AWS_REGION` or `AWS_DEFAULT_REGION`
+[36m[2020-05-11 01:20:56 DEBUG] [__init__:74][39m Using AWS region 'ap-south-1'
+[36m[2020-05-11 01:20:56 DEBUG] [__init__:85][39m Client will be using profile 'default' from boto3 session
+[36m[2020-05-11 01:20:57 DEBUG] [activity:179][39m   => succeeded with '1'
+[36m[2020-05-11 01:20:57 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-05-11 01:20:57 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[32m[2020-05-11 01:20:57 INFO] [hypothesis:184][39m Steady state hypothesis: Application responds
+[36m[2020-05-11 01:20:57 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2020-05-11 01:20:57 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-05-11 01:20:57 INFO] [activity:161][39m Probe: count-instances
+[36m[2020-05-11 01:20:57 DEBUG] [python:36][39m Activity 'count-instances' loaded from '/home/mithun/.venvs/chaostk/lib/python3.7/site-packages/chaosaws/ec2/probes.py'
+[36m[2020-05-11 01:20:57 DEBUG] [__init__:67][39m The configuration key `aws_region` is not set, looking in the environment instead for `AWS_REGION` or `AWS_DEFAULT_REGION`
+[36m[2020-05-11 01:20:57 DEBUG] [__init__:74][39m Using AWS region 'ap-south-1'
+[36m[2020-05-11 01:20:57 DEBUG] [__init__:85][39m Client will be using profile 'default' from boto3 session
+[36m[2020-05-11 01:20:57 DEBUG] [activity:179][39m   => succeeded with '1'
+[36m[2020-05-11 01:20:57 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-05-11 01:20:57 DEBUG] [hypothesis:212][39m allowed tolerance is 1
+[32m[2020-05-11 01:20:57 INFO] [hypothesis:222][39m Steady state hypothesis is met!
+[36m[2020-05-11 01:20:57 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[32m[2020-05-11 01:20:57 INFO] [experiment:326][39m Let's rollback...
+[36m[2020-05-11 01:20:57 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2020-05-11 01:20:57 INFO] [rollback:25][39m No declared rollbacks, let's move on.
+[36m[2020-05-11 01:20:57 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2020-05-11 01:20:57 INFO] [experiment:276][39m Experiment ended with status: completed
+[36m[2020-05-11 01:20:57 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2020-05-11 01:20:57 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2020-05-11 01:20:57 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2020-06-05 01:02:48 DEBUG] [cli:71][39m ###############################################################################
+[36m[2020-06-05 01:02:48 DEBUG] [cli:72][39m Running command 'run'
+[36m[2020-06-05 01:02:48 DEBUG] [cli:76][39m Using settings file '/home/mithun/.chaostoolkit/settings.yaml'
+[36m[2020-06-05 01:02:49 DEBUG] [settings:23][39m The Chaos Toolkit settings file could not be found at '/home/mithun/.chaostoolkit/settings.yaml'.
+[36m[2020-06-05 01:02:49 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-06-05 01:02:49 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-06-05 01:02:49 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-06-05 01:02:49 DEBUG] [caching:35][39m Cached 2 activities
+[32m[2020-06-05 01:02:49 INFO] [experiment:54][39m Validating the experiment's syntax
+[36m[2020-06-05 01:02:49 DEBUG] [configuration:47][39m Loading configuration...
+[36m[2020-06-05 01:02:49 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-06-05 01:02:49 DEBUG] [secret:89][39m Secrets loaded
+[36m[2020-06-05 01:02:49 DEBUG] [caching:42][39m Clearing activities cache
+[31m[2020-06-05 01:02:49 ERROR] [cli:122][39m could not find Python module 'chaosaws.ec2.probes' in activity 'count-instances'
+[36m[2020-06-05 01:02:49 DEBUG] [cli:123][39m could not find Python module 'chaosaws.ec2.probes' in activity 'count-instances'
+[36m[2020-06-05 01:04:50 DEBUG] [cli:71][39m ###############################################################################
+[36m[2020-06-05 01:04:50 DEBUG] [cli:72][39m Running command 'run'
+[36m[2020-06-05 01:04:50 DEBUG] [cli:76][39m Using settings file '/home/mithun/.chaostoolkit/settings.yaml'
+[36m[2020-06-05 01:04:51 DEBUG] [settings:23][39m The Chaos Toolkit settings file could not be found at '/home/mithun/.chaostoolkit/settings.yaml'.
+[36m[2020-06-05 01:04:51 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-06-05 01:04:51 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-06-05 01:04:51 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-06-05 01:04:51 DEBUG] [caching:35][39m Cached 2 activities
+[32m[2020-06-05 01:04:51 INFO] [experiment:54][39m Validating the experiment's syntax
+[36m[2020-06-05 01:04:51 DEBUG] [configuration:47][39m Loading configuration...
+[36m[2020-06-05 01:04:51 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-06-05 01:04:51 DEBUG] [secret:89][39m Secrets loaded
+[32m[2020-06-05 01:04:51 INFO] [experiment:103][39m Experiment looks valid
+[36m[2020-06-05 01:04:51 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2020-06-05 01:04:51 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-06-05 01:04:51 DEBUG] [caching:35][39m Cached 2 activities
+[36m[2020-06-05 01:04:51 DEBUG] [configuration:47][39m Loading configuration...
+[36m[2020-06-05 01:04:51 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-06-05 01:04:51 DEBUG] [secret:89][39m Secrets loaded
+[36m[2020-06-05 01:04:51 DEBUG] [__init__:39][39m Initializing controls
+[32m[2020-06-05 01:04:51 INFO] [experiment:195][39m Running experiment: Stop an instance
+[36m[2020-06-05 01:04:51 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[32m[2020-06-05 01:04:51 INFO] [hypothesis:184][39m Steady state hypothesis: Application responds
+[36m[2020-06-05 01:04:51 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2020-06-05 01:04:51 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-06-05 01:04:51 INFO] [activity:160][39m Probe: count-instances
+[36m[2020-06-05 01:04:51 DEBUG] [python:34][39m Activity 'count-instances' loaded from '/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaosaws/ec2/probes.py'
+[36m[2020-06-05 01:04:51 DEBUG] [__init__:66][39m The configuration key `aws_region` is not set, looking in the environment instead for `AWS_REGION` or `AWS_DEFAULT_REGION`
+[36m[2020-06-05 01:04:51 DEBUG] [activity:233][39m Activity failed
+    Traceback (most recent call last):
+      File "/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaoslib/provider/python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaosaws/ec2/probes.py", line 37, in count_instances
+        client = aws_client('ec2', configuration, secrets)
+      File "/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaosaws/__init__.py", line 71, in aws_client
+        raise InterruptExecution("AWS requires a region to be set!")
+    chaoslib.exceptions.InterruptExecution: AWS requires a region to be set!
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaoslib/activity.py", line 226, in run_activity
+        result = run_python_activity(activity, configuration, secrets)
+      File "/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaoslib/provider/python.py", line 57, in run_python_activity
+        raise ActivityFailed(
+      File "/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaoslib/provider/python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaosaws/ec2/probes.py", line 37, in count_instances
+        client = aws_client('ec2', configuration, secrets)
+      File "/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaosaws/__init__.py", line 71, in aws_client
+        raise InterruptExecution("AWS requires a region to be set!")
+    chaoslib.exceptions.ActivityFailed: chaoslib.exceptions.InterruptExecution: AWS requires a region to be set!
+[31m[2020-06-05 01:04:51 ERROR] [activity:187][39m   => failed: chaoslib.exceptions.InterruptExecution: AWS requires a region to be set!
+[36m[2020-06-05 01:04:51 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[33m[2020-06-05 01:04:51 WARNING] [hypothesis:201][39m Probe terminated unexpectedly, so its tolerance could not be validated
+[36m[2020-06-05 01:04:51 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[31m[2020-06-05 01:04:51 CRITICAL] [experiment:247][39m Steady state probe 'count-instances' is not in the given tolerance so failing this experiment
+[32m[2020-06-05 01:04:51 INFO] [experiment:275][39m Experiment ended with status: failed
+[36m[2020-06-05 01:04:51 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2020-06-05 01:04:51 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2020-06-05 01:04:51 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2020-06-05 01:06:51 DEBUG] [cli:71][39m ###############################################################################
+[36m[2020-06-05 01:06:51 DEBUG] [cli:72][39m Running command 'run'
+[36m[2020-06-05 01:06:51 DEBUG] [cli:76][39m Using settings file '/home/mithun/.chaostoolkit/settings.yaml'
+[36m[2020-06-05 01:06:52 DEBUG] [settings:23][39m The Chaos Toolkit settings file could not be found at '/home/mithun/.chaostoolkit/settings.yaml'.
+[36m[2020-06-05 01:06:52 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-06-05 01:06:52 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-06-05 01:06:52 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-06-05 01:06:52 DEBUG] [caching:35][39m Cached 2 activities
+[32m[2020-06-05 01:06:52 INFO] [experiment:54][39m Validating the experiment's syntax
+[36m[2020-06-05 01:06:52 DEBUG] [configuration:47][39m Loading configuration...
+[36m[2020-06-05 01:06:52 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-06-05 01:06:52 DEBUG] [secret:89][39m Secrets loaded
+[32m[2020-06-05 01:06:52 INFO] [experiment:103][39m Experiment looks valid
+[36m[2020-06-05 01:06:52 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2020-06-05 01:06:52 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-06-05 01:06:52 DEBUG] [caching:35][39m Cached 2 activities
+[36m[2020-06-05 01:06:52 DEBUG] [configuration:47][39m Loading configuration...
+[36m[2020-06-05 01:06:52 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-06-05 01:06:52 DEBUG] [secret:89][39m Secrets loaded
+[36m[2020-06-05 01:06:52 DEBUG] [__init__:39][39m Initializing controls
+[32m[2020-06-05 01:06:52 INFO] [experiment:195][39m Running experiment: Stop an instance
+[36m[2020-06-05 01:06:52 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[32m[2020-06-05 01:06:52 INFO] [hypothesis:184][39m Steady state hypothesis: Application responds
+[36m[2020-06-05 01:06:52 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2020-06-05 01:06:52 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-06-05 01:06:52 INFO] [activity:160][39m Probe: count-instances
+[36m[2020-06-05 01:06:52 DEBUG] [python:34][39m Activity 'count-instances' loaded from '/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaosaws/ec2/probes.py'
+[36m[2020-06-05 01:06:52 DEBUG] [__init__:66][39m The configuration key `aws_region` is not set, looking in the environment instead for `AWS_REGION` or `AWS_DEFAULT_REGION`
+[36m[2020-06-05 01:06:52 DEBUG] [__init__:74][39m Using AWS region 'ap-south-1'
+[36m[2020-06-05 01:06:52 DEBUG] [__init__:83][39m Client will be using profile 'default' from boto3 session
+[36m[2020-06-05 01:06:52 DEBUG] [activity:179][39m   => succeeded with '1'
+[36m[2020-06-05 01:06:52 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-06-05 01:06:52 DEBUG] [hypothesis:212][39m allowed tolerance is 1
+[32m[2020-06-05 01:06:52 INFO] [hypothesis:222][39m Steady state hypothesis is met!
+[36m[2020-06-05 01:06:52 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2020-06-05 01:06:52 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2020-06-05 01:06:52 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-06-05 01:06:52 INFO] [activity:160][39m Action: stop-an-ec2-instance
+[36m[2020-06-05 01:06:52 DEBUG] [python:34][39m Activity 'stop-an-ec2-instance' loaded from '/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaosaws/ec2/actions.py'
+[36m[2020-06-05 01:06:52 DEBUG] [__init__:66][39m The configuration key `aws_region` is not set, looking in the environment instead for `AWS_REGION` or `AWS_DEFAULT_REGION`
+[36m[2020-06-05 01:06:52 DEBUG] [__init__:74][39m Using AWS region 'ap-south-1'
+[36m[2020-06-05 01:06:52 DEBUG] [__init__:83][39m Client will be using profile 'default' from boto3 session
+[36m[2020-06-05 01:06:52 DEBUG] [actions:57][39m Picked EC2 instance 'defaultdict(typing.List, {'normal': ['i-0e1f0c1d97589b5e9']})' from AZ 'None' to be stopped
+[36m[2020-06-05 01:06:52 DEBUG] [actions:527][39m Stopping instances: ['i-0e1f0c1d97589b5e9']
+[36m[2020-06-05 01:06:53 DEBUG] [activity:179][39m   => succeeded with '[{'StoppingInstances': [{'CurrentState': {'Code': 64, 'Name': 'stopping'}, 'InstanceId': 'i-0e1f0c1d97589b5e9', 'PreviousState': {'Code': 16, 'Name': 'running'}}], 'ResponseMetadata': {'RequestId': 'a7b8cc03-43a2-45d9-9f30-2c29fc28967c', 'HTTPStatusCode': 200, 'HTTPHeaders': {'x-amzn-requestid': 'a7b8cc03-43a2-45d9-9f30-2c29fc28967c', 'content-type': 'text/xml;charset=UTF-8', 'content-length': '579', 'date': 'Thu, 04 Jun 2020 19:36:52 GMT', 'server': 'AmazonEC2'}, 'RetryAttempts': 0}}]'
+[36m[2020-06-05 01:06:53 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-06-05 01:06:53 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-06-05 01:06:53 INFO] [activity:160][39m Probe: count-instances
+[36m[2020-06-05 01:06:53 DEBUG] [python:34][39m Activity 'count-instances' loaded from '/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaosaws/ec2/probes.py'
+[36m[2020-06-05 01:06:53 DEBUG] [__init__:66][39m The configuration key `aws_region` is not set, looking in the environment instead for `AWS_REGION` or `AWS_DEFAULT_REGION`
+[36m[2020-06-05 01:06:53 DEBUG] [__init__:74][39m Using AWS region 'ap-south-1'
+[36m[2020-06-05 01:06:53 DEBUG] [__init__:83][39m Client will be using profile 'default' from boto3 session
+[36m[2020-06-05 01:06:53 DEBUG] [activity:179][39m   => succeeded with '1'
+[36m[2020-06-05 01:06:53 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-06-05 01:06:53 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[32m[2020-06-05 01:06:53 INFO] [hypothesis:184][39m Steady state hypothesis: Application responds
+[36m[2020-06-05 01:06:53 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2020-06-05 01:06:53 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-06-05 01:06:53 INFO] [activity:160][39m Probe: count-instances
+[36m[2020-06-05 01:06:53 DEBUG] [python:34][39m Activity 'count-instances' loaded from '/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaosaws/ec2/probes.py'
+[36m[2020-06-05 01:06:53 DEBUG] [__init__:66][39m The configuration key `aws_region` is not set, looking in the environment instead for `AWS_REGION` or `AWS_DEFAULT_REGION`
+[36m[2020-06-05 01:06:53 DEBUG] [__init__:74][39m Using AWS region 'ap-south-1'
+[36m[2020-06-05 01:06:53 DEBUG] [__init__:83][39m Client will be using profile 'default' from boto3 session
+[36m[2020-06-05 01:06:53 DEBUG] [activity:179][39m   => succeeded with '1'
+[36m[2020-06-05 01:06:53 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-06-05 01:06:53 DEBUG] [hypothesis:212][39m allowed tolerance is 1
+[32m[2020-06-05 01:06:53 INFO] [hypothesis:222][39m Steady state hypothesis is met!
+[36m[2020-06-05 01:06:53 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[32m[2020-06-05 01:06:53 INFO] [experiment:326][39m Let's rollback...
+[36m[2020-06-05 01:06:53 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2020-06-05 01:06:53 INFO] [rollback:25][39m No declared rollbacks, let's move on.
+[36m[2020-06-05 01:06:53 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2020-06-05 01:06:53 INFO] [experiment:275][39m Experiment ended with status: completed
+[36m[2020-06-05 01:06:53 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2020-06-05 01:06:53 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2020-06-05 01:06:53 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2020-06-05 01:13:45 DEBUG] [cli:71][39m ###############################################################################
+[36m[2020-06-05 01:13:45 DEBUG] [cli:72][39m Running command 'run'
+[36m[2020-06-05 01:13:45 DEBUG] [cli:76][39m Using settings file '/home/mithun/.chaostoolkit/settings.yaml'
+[36m[2020-06-05 01:13:46 DEBUG] [settings:23][39m The Chaos Toolkit settings file could not be found at '/home/mithun/.chaostoolkit/settings.yaml'.
+[36m[2020-06-05 01:13:46 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-06-05 01:13:46 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-06-05 01:13:46 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-06-05 01:13:46 DEBUG] [caching:35][39m Cached 3 activities
+[32m[2020-06-05 01:13:46 INFO] [experiment:54][39m Validating the experiment's syntax
+[36m[2020-06-05 01:13:46 DEBUG] [configuration:47][39m Loading configuration...
+[36m[2020-06-05 01:13:46 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-06-05 01:13:46 DEBUG] [secret:89][39m Secrets loaded
+[36m[2020-06-05 01:13:46 DEBUG] [caching:42][39m Clearing activities cache
+[31m[2020-06-05 01:13:46 ERROR] [cli:122][39m 'chaosaws.ec2.actions' does not expose 'start_instance' in activity 'terminate_instances'
+[36m[2020-06-05 01:13:46 DEBUG] [cli:123][39m 'chaosaws.ec2.actions' does not expose 'start_instance' in activity 'terminate_instances'
+[36m[2020-06-05 01:16:45 DEBUG] [cli:71][39m ###############################################################################
+[36m[2020-06-05 01:16:45 DEBUG] [cli:72][39m Running command 'run'
+[36m[2020-06-05 01:16:45 DEBUG] [cli:76][39m Using settings file '/home/mithun/.chaostoolkit/settings.yaml'
+[36m[2020-06-05 01:16:46 DEBUG] [settings:23][39m The Chaos Toolkit settings file could not be found at '/home/mithun/.chaostoolkit/settings.yaml'.
+[36m[2020-06-05 01:16:46 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-06-05 01:16:46 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-06-05 01:16:46 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-06-05 01:16:46 DEBUG] [caching:35][39m Cached 3 activities
+[32m[2020-06-05 01:16:46 INFO] [experiment:54][39m Validating the experiment's syntax
+[36m[2020-06-05 01:16:46 DEBUG] [configuration:47][39m Loading configuration...
+[36m[2020-06-05 01:16:46 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-06-05 01:16:46 DEBUG] [secret:89][39m Secrets loaded
+[36m[2020-06-05 01:16:46 DEBUG] [caching:42][39m Clearing activities cache
+[31m[2020-06-05 01:16:46 ERROR] [cli:122][39m argument 'instance_id' is not part of the function signature in activity 'start_instances'
+[36m[2020-06-05 01:16:46 DEBUG] [cli:123][39m argument 'instance_id' is not part of the function signature in activity 'start_instances'
+[36m[2020-06-05 01:19:04 DEBUG] [cli:71][39m ###############################################################################
+[36m[2020-06-05 01:19:04 DEBUG] [cli:72][39m Running command 'run'
+[36m[2020-06-05 01:19:04 DEBUG] [cli:76][39m Using settings file '/home/mithun/.chaostoolkit/settings.yaml'
+[36m[2020-06-05 01:19:05 DEBUG] [settings:23][39m The Chaos Toolkit settings file could not be found at '/home/mithun/.chaostoolkit/settings.yaml'.
+[36m[2020-06-05 01:19:05 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-06-05 01:19:05 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-06-05 01:19:05 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-06-05 01:19:05 DEBUG] [caching:35][39m Cached 3 activities
+[32m[2020-06-05 01:19:05 INFO] [experiment:54][39m Validating the experiment's syntax
+[36m[2020-06-05 01:19:05 DEBUG] [configuration:47][39m Loading configuration...
+[36m[2020-06-05 01:19:05 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-06-05 01:19:05 DEBUG] [secret:89][39m Secrets loaded
+[32m[2020-06-05 01:19:05 INFO] [experiment:103][39m Experiment looks valid
+[36m[2020-06-05 01:19:05 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2020-06-05 01:19:05 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-06-05 01:19:05 DEBUG] [caching:35][39m Cached 3 activities
+[36m[2020-06-05 01:19:05 DEBUG] [configuration:47][39m Loading configuration...
+[36m[2020-06-05 01:19:05 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-06-05 01:19:05 DEBUG] [secret:89][39m Secrets loaded
+[36m[2020-06-05 01:19:05 DEBUG] [__init__:39][39m Initializing controls
+[32m[2020-06-05 01:19:05 INFO] [experiment:195][39m Running experiment: Stop an instance
+[36m[2020-06-05 01:19:05 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[32m[2020-06-05 01:19:05 INFO] [hypothesis:184][39m Steady state hypothesis: Application responds
+[36m[2020-06-05 01:19:05 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2020-06-05 01:19:05 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-06-05 01:19:05 INFO] [activity:160][39m Probe: count-instances
+[36m[2020-06-05 01:19:05 DEBUG] [python:34][39m Activity 'count-instances' loaded from '/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaosaws/ec2/probes.py'
+[36m[2020-06-05 01:19:05 DEBUG] [__init__:66][39m The configuration key `aws_region` is not set, looking in the environment instead for `AWS_REGION` or `AWS_DEFAULT_REGION`
+[36m[2020-06-05 01:19:05 DEBUG] [__init__:74][39m Using AWS region 'ap-south-1'
+[36m[2020-06-05 01:19:05 DEBUG] [__init__:83][39m Client will be using profile 'default' from boto3 session
+[36m[2020-06-05 01:19:05 DEBUG] [activity:179][39m   => succeeded with '1'
+[36m[2020-06-05 01:19:05 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-06-05 01:19:05 DEBUG] [hypothesis:212][39m allowed tolerance is 1
+[32m[2020-06-05 01:19:05 INFO] [hypothesis:222][39m Steady state hypothesis is met!
+[36m[2020-06-05 01:19:05 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2020-06-05 01:19:05 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2020-06-05 01:19:05 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-06-05 01:19:05 INFO] [activity:160][39m Action: stop-an-ec2-instance
+[36m[2020-06-05 01:19:05 DEBUG] [python:34][39m Activity 'stop-an-ec2-instance' loaded from '/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaosaws/ec2/actions.py'
+[36m[2020-06-05 01:19:05 DEBUG] [__init__:66][39m The configuration key `aws_region` is not set, looking in the environment instead for `AWS_REGION` or `AWS_DEFAULT_REGION`
+[36m[2020-06-05 01:19:05 DEBUG] [__init__:74][39m Using AWS region 'ap-south-1'
+[36m[2020-06-05 01:19:05 DEBUG] [__init__:83][39m Client will be using profile 'default' from boto3 session
+[36m[2020-06-05 01:19:06 DEBUG] [actions:57][39m Picked EC2 instance 'defaultdict(typing.List, {'normal': ['i-0e1f0c1d97589b5e9']})' from AZ 'None' to be stopped
+[36m[2020-06-05 01:19:06 DEBUG] [actions:527][39m Stopping instances: ['i-0e1f0c1d97589b5e9']
+[36m[2020-06-05 01:19:06 DEBUG] [activity:179][39m   => succeeded with '[{'StoppingInstances': [{'CurrentState': {'Code': 64, 'Name': 'stopping'}, 'InstanceId': 'i-0e1f0c1d97589b5e9', 'PreviousState': {'Code': 16, 'Name': 'running'}}], 'ResponseMetadata': {'RequestId': '3b304369-fa3e-433c-831d-a65e22f6fbe1', 'HTTPStatusCode': 200, 'HTTPHeaders': {'x-amzn-requestid': '3b304369-fa3e-433c-831d-a65e22f6fbe1', 'content-type': 'text/xml;charset=UTF-8', 'content-length': '579', 'date': 'Thu, 04 Jun 2020 19:49:05 GMT', 'server': 'AmazonEC2'}, 'RetryAttempts': 0}}]'
+[36m[2020-06-05 01:19:06 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-06-05 01:19:06 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-06-05 01:19:06 INFO] [activity:160][39m Probe: count-instances
+[36m[2020-06-05 01:19:06 DEBUG] [python:34][39m Activity 'count-instances' loaded from '/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaosaws/ec2/probes.py'
+[36m[2020-06-05 01:19:06 DEBUG] [__init__:66][39m The configuration key `aws_region` is not set, looking in the environment instead for `AWS_REGION` or `AWS_DEFAULT_REGION`
+[36m[2020-06-05 01:19:06 DEBUG] [__init__:74][39m Using AWS region 'ap-south-1'
+[36m[2020-06-05 01:19:06 DEBUG] [__init__:83][39m Client will be using profile 'default' from boto3 session
+[36m[2020-06-05 01:19:06 DEBUG] [activity:179][39m   => succeeded with '1'
+[36m[2020-06-05 01:19:06 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-06-05 01:19:06 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-06-05 01:19:06 INFO] [activity:160][39m Action: start-an-ec2-instance
+[36m[2020-06-05 01:19:06 DEBUG] [python:34][39m Activity 'start-an-ec2-instance' loaded from '/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaosaws/ec2/actions.py'
+[36m[2020-06-05 01:19:06 DEBUG] [__init__:66][39m The configuration key `aws_region` is not set, looking in the environment instead for `AWS_REGION` or `AWS_DEFAULT_REGION`
+[36m[2020-06-05 01:19:06 DEBUG] [__init__:74][39m Using AWS region 'ap-south-1'
+[36m[2020-06-05 01:19:06 DEBUG] [__init__:83][39m Client will be using profile 'default' from boto3 session
+[36m[2020-06-05 01:19:06 DEBUG] [actions:587][39m Starting normal instance(s): ['i-0e1f0c1d97589b5e9']
+[36m[2020-06-05 01:19:07 DEBUG] [activity:233][39m Activity failed
+    Traceback (most recent call last):
+      File "/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaoslib/provider/python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaosaws/ec2/actions.py", line 242, in start_instances
+        return start_instances_any_type(instance_types, client)
+      File "/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaosaws/ec2/actions.py", line 588, in start_instances_any_type
+        response = client.start_instances(InstanceIds=v)
+      File "/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/botocore/client.py", line 316, in _api_call
+        return self._make_api_call(operation_name, kwargs)
+      File "/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/botocore/client.py", line 635, in _make_api_call
+        raise error_class(parsed_response, operation_name)
+    botocore.exceptions.ClientError: An error occurred (IncorrectInstanceState) when calling the StartInstances operation: The instance 'i-0e1f0c1d97589b5e9' is not in a state from which it can be started.
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaoslib/activity.py", line 226, in run_activity
+        result = run_python_activity(activity, configuration, secrets)
+      File "/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaoslib/provider/python.py", line 57, in run_python_activity
+        raise ActivityFailed(
+      File "/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaoslib/provider/python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaosaws/ec2/actions.py", line 242, in start_instances
+        return start_instances_any_type(instance_types, client)
+      File "/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaosaws/ec2/actions.py", line 588, in start_instances_any_type
+        response = client.start_instances(InstanceIds=v)
+      File "/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/botocore/client.py", line 316, in _api_call
+        return self._make_api_call(operation_name, kwargs)
+      File "/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/botocore/client.py", line 635, in _make_api_call
+        raise error_class(parsed_response, operation_name)
+    chaoslib.exceptions.ActivityFailed: botocore.exceptions.ClientError: An error occurred (IncorrectInstanceState) when calling the StartInstances operation: The instance 'i-0e1f0c1d97589b5e9' is not in a state from which it can be started.
+[31m[2020-06-05 01:19:07 ERROR] [activity:187][39m   => failed: botocore.exceptions.ClientError: An error occurred (IncorrectInstanceState) when calling the StartInstances operation: The instance 'i-0e1f0c1d97589b5e9' is not in a state from which it can be started.
+[36m[2020-06-05 01:19:07 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-06-05 01:19:07 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-06-05 01:19:07 INFO] [activity:160][39m Probe: count-instances
+[36m[2020-06-05 01:19:07 DEBUG] [python:34][39m Activity 'count-instances' loaded from '/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaosaws/ec2/probes.py'
+[36m[2020-06-05 01:19:07 DEBUG] [__init__:66][39m The configuration key `aws_region` is not set, looking in the environment instead for `AWS_REGION` or `AWS_DEFAULT_REGION`
+[36m[2020-06-05 01:19:07 DEBUG] [__init__:74][39m Using AWS region 'ap-south-1'
+[36m[2020-06-05 01:19:07 DEBUG] [__init__:83][39m Client will be using profile 'default' from boto3 session
+[36m[2020-06-05 01:19:07 DEBUG] [activity:179][39m   => succeeded with '1'
+[36m[2020-06-05 01:19:07 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-06-05 01:19:07 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[32m[2020-06-05 01:19:07 INFO] [hypothesis:184][39m Steady state hypothesis: Application responds
+[36m[2020-06-05 01:19:07 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2020-06-05 01:19:07 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-06-05 01:19:07 INFO] [activity:160][39m Probe: count-instances
+[36m[2020-06-05 01:19:07 DEBUG] [python:34][39m Activity 'count-instances' loaded from '/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaosaws/ec2/probes.py'
+[36m[2020-06-05 01:19:07 DEBUG] [__init__:66][39m The configuration key `aws_region` is not set, looking in the environment instead for `AWS_REGION` or `AWS_DEFAULT_REGION`
+[36m[2020-06-05 01:19:07 DEBUG] [__init__:74][39m Using AWS region 'ap-south-1'
+[36m[2020-06-05 01:19:07 DEBUG] [__init__:83][39m Client will be using profile 'default' from boto3 session
+[36m[2020-06-05 01:19:07 DEBUG] [activity:179][39m   => succeeded with '1'
+[36m[2020-06-05 01:19:07 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-06-05 01:19:07 DEBUG] [hypothesis:212][39m allowed tolerance is 1
+[32m[2020-06-05 01:19:07 INFO] [hypothesis:222][39m Steady state hypothesis is met!
+[36m[2020-06-05 01:19:07 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[32m[2020-06-05 01:19:07 INFO] [experiment:326][39m Let's rollback...
+[36m[2020-06-05 01:19:07 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2020-06-05 01:19:07 INFO] [rollback:25][39m No declared rollbacks, let's move on.
+[36m[2020-06-05 01:19:07 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2020-06-05 01:19:07 INFO] [experiment:275][39m Experiment ended with status: completed
+[36m[2020-06-05 01:19:07 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2020-06-05 01:19:07 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2020-06-05 01:19:07 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2020-06-05 01:25:13 DEBUG] [cli:71][39m ###############################################################################
+[36m[2020-06-05 01:25:13 DEBUG] [cli:72][39m Running command 'run'
+[36m[2020-06-05 01:25:13 DEBUG] [cli:76][39m Using settings file '/home/mithun/.chaostoolkit/settings.yaml'
+[36m[2020-06-05 01:25:14 DEBUG] [settings:23][39m The Chaos Toolkit settings file could not be found at '/home/mithun/.chaostoolkit/settings.yaml'.
+[36m[2020-06-05 01:25:14 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-06-05 01:25:14 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-06-05 01:25:14 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-06-05 01:25:14 DEBUG] [caching:35][39m Cached 3 activities
+[32m[2020-06-05 01:25:14 INFO] [experiment:54][39m Validating the experiment's syntax
+[36m[2020-06-05 01:25:14 DEBUG] [configuration:47][39m Loading configuration...
+[36m[2020-06-05 01:25:14 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-06-05 01:25:14 DEBUG] [secret:89][39m Secrets loaded
+[32m[2020-06-05 01:25:14 INFO] [experiment:103][39m Experiment looks valid
+[36m[2020-06-05 01:25:14 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2020-06-05 01:25:14 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-06-05 01:25:14 DEBUG] [caching:35][39m Cached 3 activities
+[36m[2020-06-05 01:25:14 DEBUG] [configuration:47][39m Loading configuration...
+[36m[2020-06-05 01:25:14 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-06-05 01:25:14 DEBUG] [secret:89][39m Secrets loaded
+[36m[2020-06-05 01:25:14 DEBUG] [__init__:39][39m Initializing controls
+[32m[2020-06-05 01:25:14 INFO] [experiment:195][39m Running experiment: Stop an instance
+[36m[2020-06-05 01:25:14 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[32m[2020-06-05 01:25:14 INFO] [hypothesis:184][39m Steady state hypothesis: Application responds
+[36m[2020-06-05 01:25:14 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2020-06-05 01:25:14 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-06-05 01:25:14 INFO] [activity:160][39m Probe: count-instances
+[36m[2020-06-05 01:25:14 DEBUG] [python:34][39m Activity 'count-instances' loaded from '/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaosaws/ec2/probes.py'
+[36m[2020-06-05 01:25:14 DEBUG] [__init__:66][39m The configuration key `aws_region` is not set, looking in the environment instead for `AWS_REGION` or `AWS_DEFAULT_REGION`
+[36m[2020-06-05 01:25:14 DEBUG] [__init__:74][39m Using AWS region 'ap-south-1'
+[36m[2020-06-05 01:25:14 DEBUG] [__init__:83][39m Client will be using profile 'default' from boto3 session
+[36m[2020-06-05 01:25:14 DEBUG] [activity:179][39m   => succeeded with '1'
+[36m[2020-06-05 01:25:14 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-06-05 01:25:14 DEBUG] [hypothesis:212][39m allowed tolerance is 1
+[32m[2020-06-05 01:25:14 INFO] [hypothesis:222][39m Steady state hypothesis is met!
+[36m[2020-06-05 01:25:14 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2020-06-05 01:25:14 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2020-06-05 01:25:14 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-06-05 01:25:14 INFO] [activity:160][39m Action: stop-an-ec2-instance
+[36m[2020-06-05 01:25:14 DEBUG] [python:34][39m Activity 'stop-an-ec2-instance' loaded from '/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaosaws/ec2/actions.py'
+[36m[2020-06-05 01:25:14 DEBUG] [__init__:66][39m The configuration key `aws_region` is not set, looking in the environment instead for `AWS_REGION` or `AWS_DEFAULT_REGION`
+[36m[2020-06-05 01:25:14 DEBUG] [__init__:74][39m Using AWS region 'ap-south-1'
+[36m[2020-06-05 01:25:14 DEBUG] [__init__:83][39m Client will be using profile 'default' from boto3 session
+[36m[2020-06-05 01:25:15 DEBUG] [actions:57][39m Picked EC2 instance 'defaultdict(typing.List, {'normal': ['i-0e1f0c1d97589b5e9']})' from AZ 'None' to be stopped
+[36m[2020-06-05 01:25:15 DEBUG] [actions:527][39m Stopping instances: ['i-0e1f0c1d97589b5e9']
+[36m[2020-06-05 01:25:15 DEBUG] [activity:179][39m   => succeeded with '[{'StoppingInstances': [{'CurrentState': {'Code': 64, 'Name': 'stopping'}, 'InstanceId': 'i-0e1f0c1d97589b5e9', 'PreviousState': {'Code': 16, 'Name': 'running'}}], 'ResponseMetadata': {'RequestId': '7a4ff748-c586-4eda-81d7-662c9f8aa37e', 'HTTPStatusCode': 200, 'HTTPHeaders': {'x-amzn-requestid': '7a4ff748-c586-4eda-81d7-662c9f8aa37e', 'content-type': 'text/xml;charset=UTF-8', 'content-length': '579', 'date': 'Thu, 04 Jun 2020 19:55:14 GMT', 'server': 'AmazonEC2'}, 'RetryAttempts': 0}}]'
+[32m[2020-06-05 01:25:15 INFO] [activity:197][39m Pausing after activity for 45s...
+[36m[2020-06-05 01:26:00 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-06-05 01:26:00 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-06-05 01:26:00 INFO] [activity:160][39m Probe: count-instances
+[36m[2020-06-05 01:26:00 DEBUG] [python:34][39m Activity 'count-instances' loaded from '/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaosaws/ec2/probes.py'
+[36m[2020-06-05 01:26:00 DEBUG] [__init__:66][39m The configuration key `aws_region` is not set, looking in the environment instead for `AWS_REGION` or `AWS_DEFAULT_REGION`
+[36m[2020-06-05 01:26:00 DEBUG] [__init__:74][39m Using AWS region 'ap-south-1'
+[36m[2020-06-05 01:26:00 DEBUG] [__init__:83][39m Client will be using profile 'default' from boto3 session
+[36m[2020-06-05 01:26:00 DEBUG] [activity:179][39m   => succeeded with '1'
+[36m[2020-06-05 01:26:00 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-06-05 01:26:00 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-06-05 01:26:00 INFO] [activity:160][39m Action: start-an-ec2-instance
+[36m[2020-06-05 01:26:00 DEBUG] [python:34][39m Activity 'start-an-ec2-instance' loaded from '/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaosaws/ec2/actions.py'
+[36m[2020-06-05 01:26:00 DEBUG] [__init__:66][39m The configuration key `aws_region` is not set, looking in the environment instead for `AWS_REGION` or `AWS_DEFAULT_REGION`
+[36m[2020-06-05 01:26:00 DEBUG] [__init__:74][39m Using AWS region 'ap-south-1'
+[36m[2020-06-05 01:26:00 DEBUG] [__init__:83][39m Client will be using profile 'default' from boto3 session
+[36m[2020-06-05 01:26:00 DEBUG] [actions:587][39m Starting normal instance(s): ['i-0e1f0c1d97589b5e9']
+[36m[2020-06-05 01:26:01 DEBUG] [activity:233][39m Activity failed
+    Traceback (most recent call last):
+      File "/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaoslib/provider/python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaosaws/ec2/actions.py", line 242, in start_instances
+        return start_instances_any_type(instance_types, client)
+      File "/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaosaws/ec2/actions.py", line 588, in start_instances_any_type
+        response = client.start_instances(InstanceIds=v)
+      File "/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/botocore/client.py", line 316, in _api_call
+        return self._make_api_call(operation_name, kwargs)
+      File "/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/botocore/client.py", line 635, in _make_api_call
+        raise error_class(parsed_response, operation_name)
+    botocore.exceptions.ClientError: An error occurred (IncorrectInstanceState) when calling the StartInstances operation: The instance 'i-0e1f0c1d97589b5e9' is not in a state from which it can be started.
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaoslib/activity.py", line 226, in run_activity
+        result = run_python_activity(activity, configuration, secrets)
+      File "/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaoslib/provider/python.py", line 57, in run_python_activity
+        raise ActivityFailed(
+      File "/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaoslib/provider/python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaosaws/ec2/actions.py", line 242, in start_instances
+        return start_instances_any_type(instance_types, client)
+      File "/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaosaws/ec2/actions.py", line 588, in start_instances_any_type
+        response = client.start_instances(InstanceIds=v)
+      File "/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/botocore/client.py", line 316, in _api_call
+        return self._make_api_call(operation_name, kwargs)
+      File "/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/botocore/client.py", line 635, in _make_api_call
+        raise error_class(parsed_response, operation_name)
+    chaoslib.exceptions.ActivityFailed: botocore.exceptions.ClientError: An error occurred (IncorrectInstanceState) when calling the StartInstances operation: The instance 'i-0e1f0c1d97589b5e9' is not in a state from which it can be started.
+[31m[2020-06-05 01:26:01 ERROR] [activity:187][39m   => failed: botocore.exceptions.ClientError: An error occurred (IncorrectInstanceState) when calling the StartInstances operation: The instance 'i-0e1f0c1d97589b5e9' is not in a state from which it can be started.
+[36m[2020-06-05 01:26:01 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-06-05 01:26:01 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-06-05 01:26:01 INFO] [activity:160][39m Probe: count-instances
+[36m[2020-06-05 01:26:01 DEBUG] [python:34][39m Activity 'count-instances' loaded from '/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaosaws/ec2/probes.py'
+[36m[2020-06-05 01:26:01 DEBUG] [__init__:66][39m The configuration key `aws_region` is not set, looking in the environment instead for `AWS_REGION` or `AWS_DEFAULT_REGION`
+[36m[2020-06-05 01:26:01 DEBUG] [__init__:74][39m Using AWS region 'ap-south-1'
+[36m[2020-06-05 01:26:01 DEBUG] [__init__:83][39m Client will be using profile 'default' from boto3 session
+[36m[2020-06-05 01:26:01 DEBUG] [activity:179][39m   => succeeded with '1'
+[36m[2020-06-05 01:26:01 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-06-05 01:26:01 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[32m[2020-06-05 01:26:01 INFO] [hypothesis:184][39m Steady state hypothesis: Application responds
+[36m[2020-06-05 01:26:01 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2020-06-05 01:26:01 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-06-05 01:26:01 INFO] [activity:160][39m Probe: count-instances
+[36m[2020-06-05 01:26:01 DEBUG] [python:34][39m Activity 'count-instances' loaded from '/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaosaws/ec2/probes.py'
+[36m[2020-06-05 01:26:01 DEBUG] [__init__:66][39m The configuration key `aws_region` is not set, looking in the environment instead for `AWS_REGION` or `AWS_DEFAULT_REGION`
+[36m[2020-06-05 01:26:01 DEBUG] [__init__:74][39m Using AWS region 'ap-south-1'
+[36m[2020-06-05 01:26:01 DEBUG] [__init__:83][39m Client will be using profile 'default' from boto3 session
+[36m[2020-06-05 01:26:01 DEBUG] [activity:179][39m   => succeeded with '1'
+[36m[2020-06-05 01:26:01 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-06-05 01:26:01 DEBUG] [hypothesis:212][39m allowed tolerance is 1
+[32m[2020-06-05 01:26:01 INFO] [hypothesis:222][39m Steady state hypothesis is met!
+[36m[2020-06-05 01:26:01 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[32m[2020-06-05 01:26:01 INFO] [experiment:326][39m Let's rollback...
+[36m[2020-06-05 01:26:01 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2020-06-05 01:26:01 INFO] [rollback:25][39m No declared rollbacks, let's move on.
+[36m[2020-06-05 01:26:01 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2020-06-05 01:26:01 INFO] [experiment:275][39m Experiment ended with status: completed
+[36m[2020-06-05 01:26:01 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2020-06-05 01:26:01 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2020-06-05 01:26:01 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2020-06-05 16:45:55 DEBUG] [cli:71][39m ###############################################################################
+[36m[2020-06-05 16:45:55 DEBUG] [cli:72][39m Running command 'run'
+[36m[2020-06-05 16:45:55 DEBUG] [cli:76][39m Using settings file '/home/mithun/.chaostoolkit/settings.yaml'
+[36m[2020-06-05 16:46:16 DEBUG] [cli:71][39m ###############################################################################
+[36m[2020-06-05 16:46:16 DEBUG] [cli:72][39m Running command 'run'
+[36m[2020-06-05 16:46:16 DEBUG] [cli:76][39m Using settings file '/home/mithun/.chaostoolkit/settings.yaml'
+[36m[2020-06-05 16:47:00 DEBUG] [cli:71][39m ###############################################################################
+[36m[2020-06-05 16:47:00 DEBUG] [cli:72][39m Running command 'report'
+[36m[2020-06-05 16:47:00 DEBUG] [cli:76][39m Using settings file '/home/mithun/.chaostoolkit/settings.yaml'
+[36m[2020-06-05 16:47:47 DEBUG] [cli:71][39m ###############################################################################
+[36m[2020-06-05 16:47:47 DEBUG] [cli:72][39m Running command 'report'
+[36m[2020-06-05 16:47:47 DEBUG] [cli:76][39m Using settings file '/home/mithun/.chaostoolkit/settings.yaml'
+[36m[2020-06-05 16:48:05 DEBUG] [cli:71][39m ###############################################################################
+[36m[2020-06-05 16:48:05 DEBUG] [cli:72][39m Running command 'run'
+[36m[2020-06-05 16:48:05 DEBUG] [cli:76][39m Using settings file '/home/mithun/.chaostoolkit/settings.yaml'
+[36m[2020-06-05 16:48:06 DEBUG] [settings:23][39m The Chaos Toolkit settings file could not be found at '/home/mithun/.chaostoolkit/settings.yaml'.
+[36m[2020-06-05 16:48:06 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-06-05 16:48:06 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-06-05 16:48:06 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-06-05 16:48:06 DEBUG] [caching:35][39m Cached 2 activities
+[32m[2020-06-05 16:48:06 INFO] [experiment:54][39m Validating the experiment's syntax
+[36m[2020-06-05 16:48:06 DEBUG] [configuration:47][39m Loading configuration...
+[36m[2020-06-05 16:48:06 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-06-05 16:48:06 DEBUG] [secret:89][39m Secrets loaded
+[32m[2020-06-05 16:48:06 INFO] [experiment:103][39m Experiment looks valid
+[36m[2020-06-05 16:48:06 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2020-06-05 16:48:06 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-06-05 16:48:06 DEBUG] [caching:35][39m Cached 2 activities
+[36m[2020-06-05 16:48:06 DEBUG] [configuration:47][39m Loading configuration...
+[36m[2020-06-05 16:48:06 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-06-05 16:48:06 DEBUG] [secret:89][39m Secrets loaded
+[36m[2020-06-05 16:48:06 DEBUG] [__init__:39][39m Initializing controls
+[32m[2020-06-05 16:48:06 INFO] [experiment:195][39m Running experiment: Stop an instance
+[36m[2020-06-05 16:48:06 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[32m[2020-06-05 16:48:06 INFO] [hypothesis:184][39m Steady state hypothesis: Application responds
+[36m[2020-06-05 16:48:06 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2020-06-05 16:48:06 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-06-05 16:48:06 INFO] [activity:160][39m Probe: count-instances
+[36m[2020-06-05 16:48:06 DEBUG] [python:34][39m Activity 'count-instances' loaded from '/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaosaws/ec2/probes.py'
+[36m[2020-06-05 16:48:06 DEBUG] [__init__:66][39m The configuration key `aws_region` is not set, looking in the environment instead for `AWS_REGION` or `AWS_DEFAULT_REGION`
+[36m[2020-06-05 16:48:06 DEBUG] [activity:233][39m Activity failed
+    Traceback (most recent call last):
+      File "/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaoslib/provider/python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaosaws/ec2/probes.py", line 37, in count_instances
+        client = aws_client('ec2', configuration, secrets)
+      File "/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaosaws/__init__.py", line 71, in aws_client
+        raise InterruptExecution("AWS requires a region to be set!")
+    chaoslib.exceptions.InterruptExecution: AWS requires a region to be set!
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaoslib/activity.py", line 226, in run_activity
+        result = run_python_activity(activity, configuration, secrets)
+      File "/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaoslib/provider/python.py", line 57, in run_python_activity
+        raise ActivityFailed(
+      File "/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaoslib/provider/python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaosaws/ec2/probes.py", line 37, in count_instances
+        client = aws_client('ec2', configuration, secrets)
+      File "/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaosaws/__init__.py", line 71, in aws_client
+        raise InterruptExecution("AWS requires a region to be set!")
+    chaoslib.exceptions.ActivityFailed: chaoslib.exceptions.InterruptExecution: AWS requires a region to be set!
+[31m[2020-06-05 16:48:06 ERROR] [activity:187][39m   => failed: chaoslib.exceptions.InterruptExecution: AWS requires a region to be set!
+[36m[2020-06-05 16:48:06 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[33m[2020-06-05 16:48:06 WARNING] [hypothesis:201][39m Probe terminated unexpectedly, so its tolerance could not be validated
+[36m[2020-06-05 16:48:06 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[31m[2020-06-05 16:48:06 CRITICAL] [experiment:247][39m Steady state probe 'count-instances' is not in the given tolerance so failing this experiment
+[32m[2020-06-05 16:48:06 INFO] [experiment:275][39m Experiment ended with status: failed
+[36m[2020-06-05 16:48:06 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2020-06-05 16:48:06 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2020-06-05 16:48:06 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2020-06-05 16:48:40 DEBUG] [cli:71][39m ###############################################################################
+[36m[2020-06-05 16:48:40 DEBUG] [cli:72][39m Running command 'run'
+[36m[2020-06-05 16:48:40 DEBUG] [cli:76][39m Using settings file '/home/mithun/.chaostoolkit/settings.yaml'
+[36m[2020-06-05 16:48:41 DEBUG] [settings:23][39m The Chaos Toolkit settings file could not be found at '/home/mithun/.chaostoolkit/settings.yaml'.
+[36m[2020-06-05 16:48:41 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-06-05 16:48:41 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-06-05 16:48:41 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-06-05 16:48:41 DEBUG] [caching:35][39m Cached 2 activities
+[32m[2020-06-05 16:48:41 INFO] [experiment:54][39m Validating the experiment's syntax
+[36m[2020-06-05 16:48:41 DEBUG] [configuration:47][39m Loading configuration...
+[36m[2020-06-05 16:48:41 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-06-05 16:48:41 DEBUG] [secret:89][39m Secrets loaded
+[32m[2020-06-05 16:48:41 INFO] [experiment:103][39m Experiment looks valid
+[36m[2020-06-05 16:48:41 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2020-06-05 16:48:41 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-06-05 16:48:41 DEBUG] [caching:35][39m Cached 2 activities
+[36m[2020-06-05 16:48:41 DEBUG] [configuration:47][39m Loading configuration...
+[36m[2020-06-05 16:48:41 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-06-05 16:48:41 DEBUG] [secret:89][39m Secrets loaded
+[36m[2020-06-05 16:48:41 DEBUG] [__init__:39][39m Initializing controls
+[32m[2020-06-05 16:48:41 INFO] [experiment:195][39m Running experiment: Stop an instance
+[36m[2020-06-05 16:48:41 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[32m[2020-06-05 16:48:41 INFO] [hypothesis:184][39m Steady state hypothesis: Application responds
+[36m[2020-06-05 16:48:41 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2020-06-05 16:48:41 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-06-05 16:48:41 INFO] [activity:160][39m Probe: count-instances
+[36m[2020-06-05 16:48:41 DEBUG] [python:34][39m Activity 'count-instances' loaded from '/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaosaws/ec2/probes.py'
+[36m[2020-06-05 16:48:41 DEBUG] [__init__:66][39m The configuration key `aws_region` is not set, looking in the environment instead for `AWS_REGION` or `AWS_DEFAULT_REGION`
+[36m[2020-06-05 16:48:41 DEBUG] [__init__:74][39m Using AWS region 'ap-south-1'
+[36m[2020-06-05 16:48:41 DEBUG] [__init__:83][39m Client will be using profile 'default' from boto3 session
+[36m[2020-06-05 16:48:42 DEBUG] [activity:179][39m   => succeeded with '1'
+[36m[2020-06-05 16:48:42 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-06-05 16:48:42 DEBUG] [hypothesis:212][39m allowed tolerance is 1
+[32m[2020-06-05 16:48:42 INFO] [hypothesis:222][39m Steady state hypothesis is met!
+[36m[2020-06-05 16:48:42 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2020-06-05 16:48:42 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2020-06-05 16:48:42 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-06-05 16:48:42 INFO] [activity:160][39m Action: stop-an-ec2-instance
+[36m[2020-06-05 16:48:42 DEBUG] [python:34][39m Activity 'stop-an-ec2-instance' loaded from '/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaosaws/ec2/actions.py'
+[36m[2020-06-05 16:48:42 DEBUG] [__init__:66][39m The configuration key `aws_region` is not set, looking in the environment instead for `AWS_REGION` or `AWS_DEFAULT_REGION`
+[36m[2020-06-05 16:48:42 DEBUG] [__init__:74][39m Using AWS region 'ap-south-1'
+[36m[2020-06-05 16:48:42 DEBUG] [__init__:83][39m Client will be using profile 'default' from boto3 session
+[36m[2020-06-05 16:48:42 DEBUG] [actions:57][39m Picked EC2 instance 'defaultdict(typing.List, {'normal': ['i-0e1f0c1d97589b5e9']})' from AZ 'None' to be stopped
+[36m[2020-06-05 16:48:42 DEBUG] [actions:527][39m Stopping instances: ['i-0e1f0c1d97589b5e9']
+[36m[2020-06-05 16:48:42 DEBUG] [activity:179][39m   => succeeded with '[{'StoppingInstances': [{'CurrentState': {'Code': 64, 'Name': 'stopping'}, 'InstanceId': 'i-0e1f0c1d97589b5e9', 'PreviousState': {'Code': 16, 'Name': 'running'}}], 'ResponseMetadata': {'RequestId': '389f6084-4806-428b-b571-93ac71727cba', 'HTTPStatusCode': 200, 'HTTPHeaders': {'x-amzn-requestid': '389f6084-4806-428b-b571-93ac71727cba', 'content-type': 'text/xml;charset=UTF-8', 'content-length': '579', 'date': 'Fri, 05 Jun 2020 11:18:42 GMT', 'server': 'AmazonEC2'}, 'RetryAttempts': 0}}]'
+[36m[2020-06-05 16:48:42 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-06-05 16:48:42 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-06-05 16:48:42 INFO] [activity:160][39m Probe: count-instances
+[36m[2020-06-05 16:48:42 DEBUG] [python:34][39m Activity 'count-instances' loaded from '/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaosaws/ec2/probes.py'
+[36m[2020-06-05 16:48:42 DEBUG] [__init__:66][39m The configuration key `aws_region` is not set, looking in the environment instead for `AWS_REGION` or `AWS_DEFAULT_REGION`
+[36m[2020-06-05 16:48:42 DEBUG] [__init__:74][39m Using AWS region 'ap-south-1'
+[36m[2020-06-05 16:48:42 DEBUG] [__init__:83][39m Client will be using profile 'default' from boto3 session
+[36m[2020-06-05 16:48:43 DEBUG] [activity:179][39m   => succeeded with '1'
+[36m[2020-06-05 16:48:43 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-06-05 16:48:43 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[32m[2020-06-05 16:48:43 INFO] [hypothesis:184][39m Steady state hypothesis: Application responds
+[36m[2020-06-05 16:48:43 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2020-06-05 16:48:43 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-06-05 16:48:43 INFO] [activity:160][39m Probe: count-instances
+[36m[2020-06-05 16:48:43 DEBUG] [python:34][39m Activity 'count-instances' loaded from '/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaosaws/ec2/probes.py'
+[36m[2020-06-05 16:48:43 DEBUG] [__init__:66][39m The configuration key `aws_region` is not set, looking in the environment instead for `AWS_REGION` or `AWS_DEFAULT_REGION`
+[36m[2020-06-05 16:48:43 DEBUG] [__init__:74][39m Using AWS region 'ap-south-1'
+[36m[2020-06-05 16:48:43 DEBUG] [__init__:83][39m Client will be using profile 'default' from boto3 session
+[36m[2020-06-05 16:48:43 DEBUG] [activity:179][39m   => succeeded with '1'
+[36m[2020-06-05 16:48:43 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-06-05 16:48:43 DEBUG] [hypothesis:212][39m allowed tolerance is 1
+[32m[2020-06-05 16:48:43 INFO] [hypothesis:222][39m Steady state hypothesis is met!
+[36m[2020-06-05 16:48:43 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[32m[2020-06-05 16:48:43 INFO] [experiment:326][39m Let's rollback...
+[36m[2020-06-05 16:48:43 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2020-06-05 16:48:43 INFO] [rollback:25][39m No declared rollbacks, let's move on.
+[36m[2020-06-05 16:48:43 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2020-06-05 16:48:43 INFO] [experiment:275][39m Experiment ended with status: completed
+[36m[2020-06-05 16:48:43 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2020-06-05 16:48:43 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2020-06-05 16:48:43 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2020-06-05 16:49:50 DEBUG] [cli:71][39m ###############################################################################
+[36m[2020-06-05 16:49:50 DEBUG] [cli:72][39m Running command 'report'
+[36m[2020-06-05 16:49:50 DEBUG] [cli:76][39m Using settings file '/home/mithun/.chaostoolkit/settings.yaml'
+[36m[2020-06-05 16:49:51 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-06-05 16:49:51 DEBUG] [caching:35][39m Cached 2 activities
+[36m[2020-06-05 16:51:11 DEBUG] [cli:71][39m ###############################################################################
+[36m[2020-06-05 16:51:11 DEBUG] [cli:72][39m Running command 'report'
+[36m[2020-06-05 16:51:11 DEBUG] [cli:76][39m Using settings file '/home/mithun/.chaostoolkit/settings.yaml'
+[36m[2020-06-05 16:51:12 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-06-05 16:51:13 DEBUG] [caching:35][39m Cached 2 activities
+[36m[2020-06-05 16:52:11 DEBUG] [cli:71][39m ###############################################################################
+[36m[2020-06-05 16:52:11 DEBUG] [cli:72][39m Running command 'report'
+[36m[2020-06-05 16:52:11 DEBUG] [cli:76][39m Using settings file '/home/mithun/.chaostoolkit/settings.yaml'
+[36m[2020-06-05 16:52:12 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-06-05 16:52:12 DEBUG] [caching:35][39m Cached 2 activities
+[36m[2020-06-05 19:25:53 DEBUG] [cli:71][39m ###############################################################################
+[36m[2020-06-05 19:25:53 DEBUG] [cli:72][39m Running command 'report'
+[36m[2020-06-05 19:25:53 DEBUG] [cli:76][39m Using settings file '/home/mithun/.chaostoolkit/settings.yaml'
+[36m[2020-06-05 19:25:54 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-06-05 19:25:54 DEBUG] [caching:35][39m Cached 2 activities
+[36m[2020-06-05 19:26:05 DEBUG] [cli:71][39m ###############################################################################
+[36m[2020-06-05 19:26:05 DEBUG] [cli:72][39m Running command 'run'
+[36m[2020-06-05 19:26:05 DEBUG] [cli:76][39m Using settings file '/home/mithun/.chaostoolkit/settings.yaml'
+[36m[2020-06-05 19:26:06 DEBUG] [settings:23][39m The Chaos Toolkit settings file could not be found at '/home/mithun/.chaostoolkit/settings.yaml'.
+[36m[2020-06-05 19:26:06 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-06-05 19:26:06 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-06-05 19:26:06 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-06-05 19:26:06 DEBUG] [caching:35][39m Cached 2 activities
+[32m[2020-06-05 19:26:06 INFO] [experiment:54][39m Validating the experiment's syntax
+[36m[2020-06-05 19:26:06 DEBUG] [configuration:47][39m Loading configuration...
+[36m[2020-06-05 19:26:06 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-06-05 19:26:06 DEBUG] [secret:89][39m Secrets loaded
+[32m[2020-06-05 19:26:06 INFO] [experiment:103][39m Experiment looks valid
+[36m[2020-06-05 19:26:06 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2020-06-05 19:26:06 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-06-05 19:26:06 DEBUG] [caching:35][39m Cached 2 activities
+[36m[2020-06-05 19:26:06 DEBUG] [configuration:47][39m Loading configuration...
+[36m[2020-06-05 19:26:06 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-06-05 19:26:06 DEBUG] [secret:89][39m Secrets loaded
+[36m[2020-06-05 19:26:06 DEBUG] [__init__:39][39m Initializing controls
+[32m[2020-06-05 19:26:06 INFO] [experiment:195][39m Running experiment: Stop an instance
+[36m[2020-06-05 19:26:06 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[32m[2020-06-05 19:26:06 INFO] [hypothesis:184][39m Steady state hypothesis: Application responds
+[36m[2020-06-05 19:26:06 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2020-06-05 19:26:06 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-06-05 19:26:06 INFO] [activity:160][39m Probe: count-instances
+[36m[2020-06-05 19:26:06 DEBUG] [python:34][39m Activity 'count-instances' loaded from '/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaosaws/ec2/probes.py'
+[36m[2020-06-05 19:26:06 DEBUG] [__init__:66][39m The configuration key `aws_region` is not set, looking in the environment instead for `AWS_REGION` or `AWS_DEFAULT_REGION`
+[36m[2020-06-05 19:26:06 DEBUG] [__init__:74][39m Using AWS region 'ap-south-1'
+[36m[2020-06-05 19:26:06 DEBUG] [__init__:83][39m Client will be using profile 'default' from boto3 session
+[36m[2020-06-05 19:26:07 DEBUG] [activity:179][39m   => succeeded with '1'
+[36m[2020-06-05 19:26:07 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-06-05 19:26:07 DEBUG] [hypothesis:212][39m allowed tolerance is 1
+[32m[2020-06-05 19:26:07 INFO] [hypothesis:222][39m Steady state hypothesis is met!
+[36m[2020-06-05 19:26:07 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2020-06-05 19:26:07 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2020-06-05 19:26:07 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-06-05 19:26:07 INFO] [activity:160][39m Action: stop-an-ec2-instance
+[36m[2020-06-05 19:26:07 DEBUG] [python:34][39m Activity 'stop-an-ec2-instance' loaded from '/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaosaws/ec2/actions.py'
+[36m[2020-06-05 19:26:07 DEBUG] [__init__:66][39m The configuration key `aws_region` is not set, looking in the environment instead for `AWS_REGION` or `AWS_DEFAULT_REGION`
+[36m[2020-06-05 19:26:07 DEBUG] [__init__:74][39m Using AWS region 'ap-south-1'
+[36m[2020-06-05 19:26:07 DEBUG] [__init__:83][39m Client will be using profile 'default' from boto3 session
+[36m[2020-06-05 19:26:07 DEBUG] [actions:57][39m Picked EC2 instance 'defaultdict(typing.List, {'normal': ['i-0e1f0c1d97589b5e9']})' from AZ 'None' to be stopped
+[36m[2020-06-05 19:26:07 DEBUG] [actions:527][39m Stopping instances: ['i-0e1f0c1d97589b5e9']
+[36m[2020-06-05 19:26:07 DEBUG] [activity:179][39m   => succeeded with '[{'StoppingInstances': [{'CurrentState': {'Code': 64, 'Name': 'stopping'}, 'InstanceId': 'i-0e1f0c1d97589b5e9', 'PreviousState': {'Code': 16, 'Name': 'running'}}], 'ResponseMetadata': {'RequestId': 'b7b97a4f-2f26-4b7d-aa9d-7578068e0b58', 'HTTPStatusCode': 200, 'HTTPHeaders': {'x-amzn-requestid': 'b7b97a4f-2f26-4b7d-aa9d-7578068e0b58', 'content-type': 'text/xml;charset=UTF-8', 'content-length': '579', 'date': 'Fri, 05 Jun 2020 13:56:07 GMT', 'server': 'AmazonEC2'}, 'RetryAttempts': 0}}]'
+[36m[2020-06-05 19:26:07 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-06-05 19:26:07 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-06-05 19:26:07 INFO] [activity:160][39m Probe: count-instances
+[36m[2020-06-05 19:26:07 DEBUG] [python:34][39m Activity 'count-instances' loaded from '/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaosaws/ec2/probes.py'
+[36m[2020-06-05 19:26:07 DEBUG] [__init__:66][39m The configuration key `aws_region` is not set, looking in the environment instead for `AWS_REGION` or `AWS_DEFAULT_REGION`
+[36m[2020-06-05 19:26:07 DEBUG] [__init__:74][39m Using AWS region 'ap-south-1'
+[36m[2020-06-05 19:26:07 DEBUG] [__init__:83][39m Client will be using profile 'default' from boto3 session
+[36m[2020-06-05 19:26:07 DEBUG] [activity:179][39m   => succeeded with '1'
+[36m[2020-06-05 19:26:07 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-06-05 19:26:07 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[32m[2020-06-05 19:26:07 INFO] [hypothesis:184][39m Steady state hypothesis: Application responds
+[36m[2020-06-05 19:26:07 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2020-06-05 19:26:07 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-06-05 19:26:07 INFO] [activity:160][39m Probe: count-instances
+[36m[2020-06-05 19:26:07 DEBUG] [python:34][39m Activity 'count-instances' loaded from '/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaosaws/ec2/probes.py'
+[36m[2020-06-05 19:26:07 DEBUG] [__init__:66][39m The configuration key `aws_region` is not set, looking in the environment instead for `AWS_REGION` or `AWS_DEFAULT_REGION`
+[36m[2020-06-05 19:26:07 DEBUG] [__init__:74][39m Using AWS region 'ap-south-1'
+[36m[2020-06-05 19:26:07 DEBUG] [__init__:83][39m Client will be using profile 'default' from boto3 session
+[36m[2020-06-05 19:26:07 DEBUG] [activity:179][39m   => succeeded with '1'
+[36m[2020-06-05 19:26:07 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-06-05 19:26:07 DEBUG] [hypothesis:212][39m allowed tolerance is 1
+[32m[2020-06-05 19:26:07 INFO] [hypothesis:222][39m Steady state hypothesis is met!
+[36m[2020-06-05 19:26:07 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[32m[2020-06-05 19:26:07 INFO] [experiment:326][39m Let's rollback...
+[36m[2020-06-05 19:26:07 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2020-06-05 19:26:07 INFO] [rollback:25][39m No declared rollbacks, let's move on.
+[36m[2020-06-05 19:26:07 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2020-06-05 19:26:07 INFO] [experiment:275][39m Experiment ended with status: completed
+[36m[2020-06-05 19:26:07 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2020-06-05 19:26:07 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2020-06-05 19:26:07 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2020-06-12 01:04:33 DEBUG] [cli:71][39m ###############################################################################
+[36m[2020-06-12 01:04:33 DEBUG] [cli:72][39m Running command 'run'
+[36m[2020-06-12 01:04:33 DEBUG] [cli:76][39m Using settings file '/home/mithun/.chaostoolkit/settings.yaml'
+[36m[2020-06-12 01:04:34 DEBUG] [settings:23][39m The Chaos Toolkit settings file could not be found at '/home/mithun/.chaostoolkit/settings.yaml'.
+[36m[2020-06-12 01:04:34 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-06-12 01:04:34 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-06-12 01:04:34 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-06-12 01:04:34 DEBUG] [caching:35][39m Cached 3 activities
+[32m[2020-06-12 01:04:34 INFO] [experiment:54][39m Validating the experiment's syntax
+[36m[2020-06-12 01:04:34 DEBUG] [configuration:47][39m Loading configuration...
+[36m[2020-06-12 01:04:34 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-06-12 01:04:34 DEBUG] [secret:89][39m Secrets loaded
+[36m[2020-06-12 01:04:34 DEBUG] [caching:75][39m cache miss for 'all-services-are-healthy'
+[36m[2020-06-12 01:04:34 DEBUG] [caching:42][39m Clearing activities cache
+[31m[2020-06-12 01:04:34 ERROR] [cli:122][39m referenced activity 'all-services-are-healthy' could not be found in the experiment
+[36m[2020-06-12 01:04:34 DEBUG] [cli:123][39m referenced activity 'all-services-are-healthy' could not be found in the experiment
+[36m[2020-06-12 01:06:11 DEBUG] [cli:71][39m ###############################################################################
+[36m[2020-06-12 01:06:11 DEBUG] [cli:72][39m Running command 'run'
+[36m[2020-06-12 01:06:11 DEBUG] [cli:76][39m Using settings file '/home/mithun/.chaostoolkit/settings.yaml'
+[36m[2020-06-12 01:06:12 DEBUG] [settings:23][39m The Chaos Toolkit settings file could not be found at '/home/mithun/.chaostoolkit/settings.yaml'.
+[36m[2020-06-12 01:06:12 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-06-12 01:06:12 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-06-12 01:06:12 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-06-12 01:06:12 DEBUG] [caching:35][39m Cached 3 activities
+[32m[2020-06-12 01:06:12 INFO] [experiment:54][39m Validating the experiment's syntax
+[36m[2020-06-12 01:06:12 DEBUG] [configuration:47][39m Loading configuration...
+[36m[2020-06-12 01:06:12 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-06-12 01:06:12 DEBUG] [secret:89][39m Secrets loaded
+[32m[2020-06-12 01:06:12 INFO] [experiment:103][39m Experiment looks valid
+[36m[2020-06-12 01:06:12 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2020-06-12 01:06:12 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-06-12 01:06:12 DEBUG] [caching:35][39m Cached 3 activities
+[36m[2020-06-12 01:06:12 DEBUG] [configuration:47][39m Loading configuration...
+[36m[2020-06-12 01:06:12 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-06-12 01:06:12 DEBUG] [secret:89][39m Secrets loaded
+[36m[2020-06-12 01:06:12 DEBUG] [__init__:39][39m Initializing controls
+[32m[2020-06-12 01:06:12 INFO] [experiment:195][39m Running experiment: Stop an instance
+[36m[2020-06-12 01:06:12 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[32m[2020-06-12 01:06:12 INFO] [hypothesis:184][39m Steady state hypothesis: Application responds
+[36m[2020-06-12 01:06:12 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2020-06-12 01:06:12 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-06-12 01:06:12 INFO] [activity:160][39m Probe: count-instances
+[36m[2020-06-12 01:06:12 DEBUG] [python:34][39m Activity 'count-instances' loaded from '/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaosaws/ec2/probes.py'
+[36m[2020-06-12 01:06:12 DEBUG] [__init__:66][39m The configuration key `aws_region` is not set, looking in the environment instead for `AWS_REGION` or `AWS_DEFAULT_REGION`
+[36m[2020-06-12 01:06:12 DEBUG] [__init__:74][39m Using AWS region 'ap-south-1'
+[36m[2020-06-12 01:06:12 DEBUG] [__init__:83][39m Client will be using profile 'default' from boto3 session
+[36m[2020-06-12 01:06:13 DEBUG] [activity:179][39m   => succeeded with '1'
+[36m[2020-06-12 01:06:13 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-06-12 01:06:13 DEBUG] [hypothesis:212][39m allowed tolerance is 1
+[32m[2020-06-12 01:06:13 INFO] [hypothesis:222][39m Steady state hypothesis is met!
+[36m[2020-06-12 01:06:13 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2020-06-12 01:06:13 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2020-06-12 01:06:13 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-06-12 01:06:13 INFO] [activity:160][39m Action: stop-an-ec2-instance
+[36m[2020-06-12 01:06:13 DEBUG] [python:34][39m Activity 'stop-an-ec2-instance' loaded from '/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaosaws/ec2/actions.py'
+[36m[2020-06-12 01:06:13 DEBUG] [__init__:66][39m The configuration key `aws_region` is not set, looking in the environment instead for `AWS_REGION` or `AWS_DEFAULT_REGION`
+[36m[2020-06-12 01:06:13 DEBUG] [__init__:74][39m Using AWS region 'ap-south-1'
+[36m[2020-06-12 01:06:13 DEBUG] [__init__:83][39m Client will be using profile 'default' from boto3 session
+[36m[2020-06-12 01:06:13 DEBUG] [actions:57][39m Picked EC2 instance 'defaultdict(typing.List, {'normal': ['i-0e1f0c1d97589b5e9']})' from AZ 'None' to be stopped
+[36m[2020-06-12 01:06:13 DEBUG] [actions:527][39m Stopping instances: ['i-0e1f0c1d97589b5e9']
+[36m[2020-06-12 01:06:13 DEBUG] [activity:179][39m   => succeeded with '[{'StoppingInstances': [{'CurrentState': {'Code': 64, 'Name': 'stopping'}, 'InstanceId': 'i-0e1f0c1d97589b5e9', 'PreviousState': {'Code': 16, 'Name': 'running'}}], 'ResponseMetadata': {'RequestId': 'f974bb74-df54-411b-8733-80b708ac8279', 'HTTPStatusCode': 200, 'HTTPHeaders': {'x-amzn-requestid': 'f974bb74-df54-411b-8733-80b708ac8279', 'content-type': 'text/xml;charset=UTF-8', 'content-length': '579', 'date': 'Thu, 11 Jun 2020 19:36:12 GMT', 'server': 'AmazonEC2'}, 'RetryAttempts': 0}}]'
+[32m[2020-06-12 01:06:13 INFO] [activity:197][39m Pausing after activity for 30s...
+[36m[2020-06-12 01:06:43 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-06-12 01:06:43 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-06-12 01:06:43 INFO] [activity:160][39m Probe: count-instances
+[36m[2020-06-12 01:06:43 DEBUG] [python:34][39m Activity 'count-instances' loaded from '/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaosaws/ec2/probes.py'
+[36m[2020-06-12 01:06:43 DEBUG] [__init__:66][39m The configuration key `aws_region` is not set, looking in the environment instead for `AWS_REGION` or `AWS_DEFAULT_REGION`
+[36m[2020-06-12 01:06:43 DEBUG] [__init__:74][39m Using AWS region 'ap-south-1'
+[36m[2020-06-12 01:06:43 DEBUG] [__init__:83][39m Client will be using profile 'default' from boto3 session
+[36m[2020-06-12 01:06:43 DEBUG] [activity:179][39m   => succeeded with '1'
+[36m[2020-06-12 01:06:43 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-06-12 01:06:43 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-06-12 01:06:43 INFO] [activity:160][39m Probe: healthcheck-service-must-still-respond
+[33m[2020-06-12 01:06:43 WARNING] [http:75][39m This HTTP call returned a response with a HTTP status code above 400. This may indicate some error and not what you expected. Please have a look at the logs.
+[36m[2020-06-12 01:06:43 DEBUG] [activity:179][39m   => succeeded with '{'status': 500, 'headers': {'Content-Length': '457', 'Content-Type': 'application/json', 'Date': 'Thu, 11 Jun 2020 19:36:43 GMT'}, 'body': {'details': {'good-check': {'name': 'good-check', 'status': 'failed', 'error': "Ran into error while performing 'GET' request: Get http://ec2-13-126-17-117.ap-south-1.compute.amazonaws.com:8000/time: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)", 'fatal': True, 'check_time': '2020-06-12T01:06:42.597608971+05:30', 'num_failures': 3, 'first_failure_at': '2020-06-12T01:06:22.597457835+05:30'}}, 'status': 'failed'}}'
+[36m[2020-06-12 01:06:43 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-06-12 01:06:43 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[32m[2020-06-12 01:06:43 INFO] [hypothesis:184][39m Steady state hypothesis: Application responds
+[36m[2020-06-12 01:06:43 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2020-06-12 01:06:43 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-06-12 01:06:43 INFO] [activity:160][39m Probe: count-instances
+[36m[2020-06-12 01:06:43 DEBUG] [python:34][39m Activity 'count-instances' loaded from '/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaosaws/ec2/probes.py'
+[36m[2020-06-12 01:06:43 DEBUG] [__init__:66][39m The configuration key `aws_region` is not set, looking in the environment instead for `AWS_REGION` or `AWS_DEFAULT_REGION`
+[36m[2020-06-12 01:06:43 DEBUG] [__init__:74][39m Using AWS region 'ap-south-1'
+[36m[2020-06-12 01:06:43 DEBUG] [__init__:83][39m Client will be using profile 'default' from boto3 session
+[36m[2020-06-12 01:06:43 DEBUG] [activity:179][39m   => succeeded with '1'
+[36m[2020-06-12 01:06:43 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-06-12 01:06:43 DEBUG] [hypothesis:212][39m allowed tolerance is 1
+[32m[2020-06-12 01:06:43 INFO] [hypothesis:222][39m Steady state hypothesis is met!
+[36m[2020-06-12 01:06:43 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[32m[2020-06-12 01:06:43 INFO] [experiment:326][39m Let's rollback...
+[36m[2020-06-12 01:06:43 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2020-06-12 01:06:43 INFO] [rollback:25][39m No declared rollbacks, let's move on.
+[36m[2020-06-12 01:06:43 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2020-06-12 01:06:43 INFO] [experiment:275][39m Experiment ended with status: completed
+[36m[2020-06-12 01:06:43 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2020-06-12 01:06:43 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2020-06-12 01:06:43 DEBUG] [caching:42][39m Clearing activities cache

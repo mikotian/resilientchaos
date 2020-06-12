@@ -1,0 +1,238 @@
+{
+  "chaoslib-version": "1.9.0",
+  "platform": "Linux-5.4.0-7634-generic-x86_64-with-glibc2.29",
+  "node": "pop-os",
+  "experiment": {
+    "version": "1.0.0",
+    "title": "Stop an instance",
+    "description": "it should stop",
+    "tags": [
+      "stop"
+    ],
+    "steady-state-hypothesis": {
+      "title": "Application responds",
+      "probes": [
+        {
+          "name": "count-instances",
+          "type": "probe",
+          "tolerance": 1,
+          "provider": {
+            "func": "count_instances",
+            "type": "python",
+            "arguments": {
+              "filters": []
+            },
+            "module": "chaosaws.ec2.probes"
+          }
+        }
+      ]
+    },
+    "method": [
+      {
+        "type": "action",
+        "name": "stop-an-ec2-instance",
+        "provider": {
+          "type": "python",
+          "module": "chaosaws.ec2.actions",
+          "func": "stop_instance",
+          "arguments": {
+            "instance_id": "i-0e1f0c1d97589b5e9"
+          }
+        },
+        "pauses": {
+          "after": 30
+        }
+      },
+      {
+        "name": "count-instances",
+        "type": "probe",
+        "tolerance": 0,
+        "provider": {
+          "func": "count_instances",
+          "type": "python",
+          "arguments": {
+            "filters": []
+          },
+          "module": "chaosaws.ec2.probes"
+        }
+      },
+      {
+        "type": "probe",
+        "name": "healthcheck-service-must-still-respond",
+        "provider": {
+          "type": "http",
+          "url": "http://localhost:8080/healthcheck"
+        }
+      }
+    ],
+    "dry": false
+  },
+  "start": "2020-06-11T19:36:12.641557",
+  "status": "completed",
+  "deviated": false,
+  "steady_states": {
+    "before": {
+      "steady_state_met": true,
+      "probes": [
+        {
+          "activity": {
+            "name": "count-instances",
+            "type": "probe",
+            "tolerance": 1,
+            "provider": {
+              "func": "count_instances",
+              "type": "python",
+              "arguments": {
+                "filters": []
+              },
+              "module": "chaosaws.ec2.probes"
+            }
+          },
+          "output": 1,
+          "status": "succeeded",
+          "start": "2020-06-11T19:36:12.641876",
+          "end": "2020-06-11T19:36:13.050949",
+          "duration": 0.409073,
+          "tolerance_met": true
+        }
+      ]
+    },
+    "after": {
+      "steady_state_met": true,
+      "probes": [
+        {
+          "activity": {
+            "name": "count-instances",
+            "type": "probe",
+            "tolerance": 1,
+            "provider": {
+              "func": "count_instances",
+              "type": "python",
+              "arguments": {
+                "filters": []
+              },
+              "module": "chaosaws.ec2.probes"
+            }
+          },
+          "output": 1,
+          "status": "succeeded",
+          "start": "2020-06-11T19:36:43.668726",
+          "end": "2020-06-11T19:36:43.797204",
+          "duration": 0.128478,
+          "tolerance_met": true
+        }
+      ]
+    }
+  },
+  "run": [
+    {
+      "activity": {
+        "type": "action",
+        "name": "stop-an-ec2-instance",
+        "provider": {
+          "type": "python",
+          "module": "chaosaws.ec2.actions",
+          "func": "stop_instance",
+          "arguments": {
+            "instance_id": "i-0e1f0c1d97589b5e9"
+          }
+        },
+        "pauses": {
+          "after": 30
+        }
+      },
+      "output": [
+        {
+          "StoppingInstances": [
+            {
+              "CurrentState": {
+                "Code": 64,
+                "Name": "stopping"
+              },
+              "InstanceId": "i-0e1f0c1d97589b5e9",
+              "PreviousState": {
+                "Code": 16,
+                "Name": "running"
+              }
+            }
+          ],
+          "ResponseMetadata": {
+            "RequestId": "f974bb74-df54-411b-8733-80b708ac8279",
+            "HTTPStatusCode": 200,
+            "HTTPHeaders": {
+              "x-amzn-requestid": "f974bb74-df54-411b-8733-80b708ac8279",
+              "content-type": "text/xml;charset=UTF-8",
+              "content-length": "579",
+              "date": "Thu, 11 Jun 2020 19:36:12 GMT",
+              "server": "AmazonEC2"
+            },
+            "RetryAttempts": 0
+          }
+        }
+      ],
+      "status": "succeeded",
+      "start": "2020-06-11T19:36:13.051716",
+      "end": "2020-06-11T19:36:13.433634",
+      "duration": 0.381918
+    },
+    {
+      "activity": {
+        "name": "count-instances",
+        "type": "probe",
+        "tolerance": 0,
+        "provider": {
+          "func": "count_instances",
+          "type": "python",
+          "arguments": {
+            "filters": []
+          },
+          "module": "chaosaws.ec2.probes"
+        }
+      },
+      "output": 1,
+      "status": "succeeded",
+      "start": "2020-06-11T19:36:43.465703",
+      "end": "2020-06-11T19:36:43.664983",
+      "duration": 0.19928
+    },
+    {
+      "activity": {
+        "type": "probe",
+        "name": "healthcheck-service-must-still-respond",
+        "provider": {
+          "type": "http",
+          "url": "http://localhost:8080/healthcheck"
+        }
+      },
+      "output": {
+        "status": 500,
+        "headers": {
+          "Content-Length": "457",
+          "Content-Type": "application/json",
+          "Date": "Thu, 11 Jun 2020 19:36:43 GMT"
+        },
+        "body": {
+          "details": {
+            "good-check": {
+              "name": "good-check",
+              "status": "failed",
+              "error": "Ran into error while performing 'GET' request: Get http://ec2-13-126-17-117.ap-south-1.compute.amazonaws.com:8000/time: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)",
+              "fatal": true,
+              "check_time": "2020-06-12T01:06:42.597608971+05:30",
+              "num_failures": 3,
+              "first_failure_at": "2020-06-12T01:06:22.597457835+05:30"
+            }
+          },
+          "status": "failed"
+        }
+      },
+      "status": "succeeded",
+      "start": "2020-06-11T19:36:43.665241",
+      "end": "2020-06-11T19:36:43.668294",
+      "duration": 0.003053
+    }
+  ],
+  "rollbacks": [],
+  "end": "2020-06-11T19:36:43.797752",
+  "duration": 31.166269540786743
+}

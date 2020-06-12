@@ -1,0 +1,64 @@
+{
+    "version": "1.0.0",
+    "title": "Stop an instance",
+    "description": "it should stop",
+    "tags": ["stop"],
+    "steady-state-hypothesis": {
+        "title": "Application responds",
+        "probes": [
+            {
+  "name": "count-instances",
+  "type": "probe",
+  "tolerance": 1,
+  "provider": {
+    "func": "count_instances",
+    "type": "python",
+    "arguments": {
+      "filters": []
+    },
+    "module": "chaosaws.ec2.probes"
+  }
+}
+
+        ]
+    },
+    "method": [
+        {
+    "type":"action",
+    "name": "stop-an-ec2-instance",
+    "provider": {
+        "type": "python",
+        "module": "chaosaws.ec2.actions",
+        "func": "stop_instance",
+        "arguments": {
+            "instance_id": "i-0e1f0c1d97589b5e9"
+        }
+    },
+         "pauses": {
+                "after": 30
+            }
+},
+{
+  "name": "count-instances",
+  "type": "probe",
+  "tolerance": 0,
+  "provider": {
+    "func": "count_instances",
+    "type": "python",
+    "arguments": {
+      "filters": []
+    },
+    "module": "chaosaws.ec2.probes"
+  }
+},
+        
+        {
+            "type": "probe",
+            "name": "healthcheck-service-must-still-respond",
+            "provider": {
+                "type": "http",
+                "url": "http://localhost:8080/healthcheck"
+            }
+        }
+    ]
+}

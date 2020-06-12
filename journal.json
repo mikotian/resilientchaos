@@ -1,0 +1,273 @@
+{
+  "chaoslib-version": "1.9.0",
+  "platform": "Linux-5.4.0-7634-generic-x86_64-with-glibc2.29",
+  "node": "pop-os",
+  "experiment": {
+    "version": "1.0.0",
+    "title": "Stop an instance",
+    "description": "it should stop",
+    "tags": [
+      "stop"
+    ],
+    "steady-state-hypothesis": {
+      "title": "Application responds",
+      "probes": [
+        {
+          "name": "count-instances",
+          "type": "probe",
+          "tolerance": 1,
+          "provider": {
+            "func": "count_instances",
+            "type": "python",
+            "arguments": {
+              "filters": []
+            },
+            "module": "chaosaws.ec2.probes"
+          }
+        }
+      ]
+    },
+    "method": [
+      {
+        "type": "action",
+        "name": "stop-an-ec2-instance",
+        "provider": {
+          "type": "python",
+          "module": "chaosaws.ec2.actions",
+          "func": "stop_instance",
+          "arguments": {
+            "instance_id": "i-0e1f0c1d97589b5e9"
+          }
+        },
+        "pauses": {
+          "after": 45
+        }
+      },
+      {
+        "name": "count-instances",
+        "type": "probe",
+        "tolerance": 0,
+        "provider": {
+          "func": "count_instances",
+          "type": "python",
+          "arguments": {
+            "filters": []
+          },
+          "module": "chaosaws.ec2.probes"
+        }
+      },
+      {
+        "type": "action",
+        "name": "start-an-ec2-instance",
+        "provider": {
+          "type": "python",
+          "module": "chaosaws.ec2.actions",
+          "func": "start_instances",
+          "arguments": {
+            "instance_ids": [
+              "i-0e1f0c1d97589b5e9"
+            ]
+          }
+        }
+      },
+      {
+        "name": "count-instances",
+        "type": "probe",
+        "tolerance": 1,
+        "provider": {
+          "func": "count_instances",
+          "type": "python",
+          "arguments": {
+            "filters": []
+          },
+          "module": "chaosaws.ec2.probes"
+        }
+      }
+    ],
+    "dry": false
+  },
+  "start": "2020-06-04T19:55:14.789929",
+  "status": "completed",
+  "deviated": false,
+  "steady_states": {
+    "before": {
+      "steady_state_met": true,
+      "probes": [
+        {
+          "activity": {
+            "name": "count-instances",
+            "type": "probe",
+            "tolerance": 1,
+            "provider": {
+              "func": "count_instances",
+              "type": "python",
+              "arguments": {
+                "filters": []
+              },
+              "module": "chaosaws.ec2.probes"
+            }
+          },
+          "output": 1,
+          "status": "succeeded",
+          "start": "2020-06-04T19:55:14.790359",
+          "end": "2020-06-04T19:55:14.970387",
+          "duration": 0.180028,
+          "tolerance_met": true
+        }
+      ]
+    },
+    "after": {
+      "steady_state_met": true,
+      "probes": [
+        {
+          "activity": {
+            "name": "count-instances",
+            "type": "probe",
+            "tolerance": 1,
+            "provider": {
+              "func": "count_instances",
+              "type": "python",
+              "arguments": {
+                "filters": []
+              },
+              "module": "chaosaws.ec2.probes"
+            }
+          },
+          "output": 1,
+          "status": "succeeded",
+          "start": "2020-06-04T19:56:01.348406",
+          "end": "2020-06-04T19:56:01.472996",
+          "duration": 0.12459,
+          "tolerance_met": true
+        }
+      ]
+    }
+  },
+  "run": [
+    {
+      "activity": {
+        "type": "action",
+        "name": "stop-an-ec2-instance",
+        "provider": {
+          "type": "python",
+          "module": "chaosaws.ec2.actions",
+          "func": "stop_instance",
+          "arguments": {
+            "instance_id": "i-0e1f0c1d97589b5e9"
+          }
+        },
+        "pauses": {
+          "after": 45
+        }
+      },
+      "output": [
+        {
+          "StoppingInstances": [
+            {
+              "CurrentState": {
+                "Code": 64,
+                "Name": "stopping"
+              },
+              "InstanceId": "i-0e1f0c1d97589b5e9",
+              "PreviousState": {
+                "Code": 16,
+                "Name": "running"
+              }
+            }
+          ],
+          "ResponseMetadata": {
+            "RequestId": "7a4ff748-c586-4eda-81d7-662c9f8aa37e",
+            "HTTPStatusCode": 200,
+            "HTTPHeaders": {
+              "x-amzn-requestid": "7a4ff748-c586-4eda-81d7-662c9f8aa37e",
+              "content-type": "text/xml;charset=UTF-8",
+              "content-length": "579",
+              "date": "Thu, 04 Jun 2020 19:55:14 GMT",
+              "server": "AmazonEC2"
+            },
+            "RetryAttempts": 0
+          }
+        }
+      ],
+      "status": "succeeded",
+      "start": "2020-06-04T19:55:14.970996",
+      "end": "2020-06-04T19:55:15.333083",
+      "duration": 0.362087
+    },
+    {
+      "activity": {
+        "name": "count-instances",
+        "type": "probe",
+        "tolerance": 0,
+        "provider": {
+          "func": "count_instances",
+          "type": "python",
+          "arguments": {
+            "filters": []
+          },
+          "module": "chaosaws.ec2.probes"
+        }
+      },
+      "output": 1,
+      "status": "succeeded",
+      "start": "2020-06-04T19:56:00.381801",
+      "end": "2020-06-04T19:56:00.731000",
+      "duration": 0.349199
+    },
+    {
+      "activity": {
+        "type": "action",
+        "name": "start-an-ec2-instance",
+        "provider": {
+          "type": "python",
+          "module": "chaosaws.ec2.actions",
+          "func": "start_instances",
+          "arguments": {
+            "instance_ids": [
+              "i-0e1f0c1d97589b5e9"
+            ]
+          }
+        }
+      },
+      "output": null,
+      "status": "failed",
+      "exception": [
+        "Traceback (most recent call last):\n",
+        "  File \"/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaoslib/provider/python.py\", line 55, in run_python_activity\n    return func(**arguments)\n",
+        "  File \"/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaosaws/ec2/actions.py\", line 242, in start_instances\n    return start_instances_any_type(instance_types, client)\n",
+        "  File \"/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/chaosaws/ec2/actions.py\", line 588, in start_instances_any_type\n    response = client.start_instances(InstanceIds=v)\n",
+        "  File \"/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/botocore/client.py\", line 316, in _api_call\n    return self._make_api_call(operation_name, kwargs)\n",
+        "  File \"/home/mithun/.venvs/chaostk/lib/python3.8/site-packages/botocore/client.py\", line 635, in _make_api_call\n    raise error_class(parsed_response, operation_name)\n",
+        "botocore.exceptions.ClientError: An error occurred (IncorrectInstanceState) when calling the StartInstances operation: The instance 'i-0e1f0c1d97589b5e9' is not in a state from which it can be started.\n",
+        "\nDuring handling of the above exception, another exception occurred:\n\n",
+        "chaoslib.exceptions.ActivityFailed: botocore.exceptions.ClientError: An error occurred (IncorrectInstanceState) when calling the StartInstances operation: The instance 'i-0e1f0c1d97589b5e9' is not in a state from which it can be started.\n"
+      ],
+      "start": "2020-06-04T19:56:00.731506",
+      "end": "2020-06-04T19:56:01.205769",
+      "duration": 0.474263
+    },
+    {
+      "activity": {
+        "name": "count-instances",
+        "type": "probe",
+        "tolerance": 1,
+        "provider": {
+          "func": "count_instances",
+          "type": "python",
+          "arguments": {
+            "filters": []
+          },
+          "module": "chaosaws.ec2.probes"
+        }
+      },
+      "output": 1,
+      "status": "succeeded",
+      "start": "2020-06-04T19:56:01.208009",
+      "end": "2020-06-04T19:56:01.347786",
+      "duration": 0.139777
+    }
+  ],
+  "rollbacks": [],
+  "end": "2020-06-04T19:56:01.473870",
+  "duration": 46.69169282913208
+}
