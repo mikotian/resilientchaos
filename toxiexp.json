@@ -1,0 +1,108 @@
+{
+    "version": "1.0.0",
+    "title": "Are our services impacted by network latency?",
+    "description": "Introduce network latency and measure resulting throughput of service",
+    "contributions": {
+        "reliability": "high",
+        "availability": "high",
+        "performance": "medium",
+        "security": "none"
+    },
+    "tags": [
+        "toxiproxy"
+    ],
+    "configuration": {
+        "prometheus_base_url": "http://demo.foo.bar",
+	"toxiproxy_host" : "127.0.0.1"
+    },
+    "secrets": {
+        "global": {
+            "auth": "Basic XYZ"
+        }
+    },
+    "steady-state-hypothesis": {
+        "title": "Services are up",
+        "probes": [
+
+            {
+                "type": "probe",
+                "name": "website-must-be-up",
+                "tolerance": 200,
+                "provider": {
+                    "type": "http",
+                    "timeout": [3, 5],
+                    "url": "http://localhost:8080/healthcheck",
+                    "method": "GET"
+                }
+            },
+	    {
+		"type":"probe",
+		"name":"proxy must be up",
+		"tolerance":true,
+		"provider":{
+			"type":"python",
+			"module":"chaostoxi.proxy.probes",
+			"arguments": {
+      				"proxy_name": "timeproxy"
+			},
+			"func":"proxy_exist"
+		}
+	    }
+        ]
+    },
+    "method": [
+        {
+  "name": "disable-proxy",
+  "provider": {
+    "module": "chaostoxi.proxy.actions",
+    "type": "python",
+    "arguments": {
+      "proxy_name": "timeproxy"
+    },
+    "func": "disable_proxy"
+  },
+  "type": "action"
+},
+        {
+                "type": "probe",
+                "name": "website-must-be-reachable",
+                "tolerance": 200,
+                "provider": {
+                    "type": "http",
+                    "url": "http://localhost:8080/healthcheck"
+                }
+            },
+        {
+    "type": "probe",
+    "name": "healthcheck-must-fail",
+    "tolerance": {
+        "type": "jsonpath",
+        "path": "$.details.good-check.status",
+        "expect": ["failed"],
+        "target": "body"
+    },
+    "provider": {
+        "type": "http",
+        "url": "http://localhost:8080/healthcheck"
+    }
+}
+    ],
+    "rollbacks": [
+    {
+        "type": "action",
+        "name": "reset all proxies",
+        "provider": {
+            "type": "python",
+            "module": "chaostoxi.proxy.actions",
+	    "arguments": {
+      "proxy_name": "timeproxy"
+    },
+            "func": "enable_proxy"
+        },
+        "pauses": {
+            "after": 30
+        }
+    }
+]
+    
+}
