@@ -14,7 +14,7 @@ import (
 func main() {
 	// Create a new health instance
 	h := health.New()
-	goodTestURL, _ := url.Parse("http://ec2-13-126-17-117.ap-south-1.compute.amazonaws.com:8000/time")
+	goodTestURL, _ := url.Parse("http://localhost:8001/time")
 
 	// Create a couple of checks
 	goodHTTPCheck, _ := checkers.NewHTTP(&checkers.HTTPConfig{
@@ -38,9 +38,9 @@ func main() {
 		log.Fatalf("Unable to start healthcheck: %v", err)
 	}
 
-	log.Println("Server listening on :8080")
+	log.Println("Server listening on :8008")
 
 	// Define a healthcheck endpoint and use the built-in JSON handler
 	http.HandleFunc("/healthcheck", handlers.NewJSONHandlerFunc(h, nil))
-	http.ListenAndServe(":8080", nil)
+	http.ListenAndServe(":8008", nil)
 }
