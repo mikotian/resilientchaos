@@ -31,7 +31,7 @@
                 "provider": {
                     "type": "http",
                     "timeout": [3, 5],
-                    "url": "http://localhost:8080/healthcheck",
+                    "url": "http://localhost:8008/healthcheck",
                     "method": "GET"
                 }
             },
@@ -69,7 +69,7 @@
                 "tolerance": 200,
                 "provider": {
                     "type": "http",
-                    "url": "http://localhost:8080/healthcheck"
+                    "url": "http://localhost:8008/healthcheck"
                 }
             },
         {
@@ -83,7 +83,7 @@
     },
     "provider": {
         "type": "http",
-        "url": "http://localhost:8080/healthcheck"
+        "url": "http://localhost:8008/healthcheck"
     }
 }
     ],
