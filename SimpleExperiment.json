@@ -1,0 +1,52 @@
+{
+  "version": "1.0.0",
+  "title": "random website testing",
+  "description": "Just checking the chaostoolkit base stuff",
+  "steady-state-hypothesis": {
+    "title": "Website is OK",
+    "probes": [
+      {
+        "type": "probe",
+        "name": "website-must-be-up",
+        "tolerance": 200,
+        "provider": {
+          "type": "http",
+          "timeout": [
+            3,
+            5
+          ],
+          "url": "https://httpbin.org/forms/post",
+          "method": "GET"
+        }
+      }
+    ]
+  },
+  "method": [
+    {
+      "type": "probe",
+      "name": "website-must-return-202",
+      "tolerance": 202,
+      "provider": {
+        "type": "http",
+        "url": "https://httpbin.org/status/202"
+      }
+    },
+    {
+      "type": "probe",
+      "name": "response should be json",
+      "tolerance": {
+        "type": "jsonpath",
+        "path": "$.slideshow.author",
+        "expect": [
+          "failed"
+        ],
+        "target": "body"
+      },
+      "provider": {
+        "type": "http",
+        "url": "https://httpbin.org/json"
+      }
+    }
+  ],
+  "rollbacks": []
+}
